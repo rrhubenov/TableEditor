@@ -1,10 +1,14 @@
+#pragma once
+
+#include <string>
 
 class Cell {
     private:
-        void value;
+        std::string value;
     public:
-        Cell(void value);
+        Cell(std::string value);
 
-        void getValue();
-        void setValue();
-}
+        std::string getValue();
+        void setValue(std::string value);
+};
+

@@ -3,13 +3,11 @@
 
 class CLIController {
     private:
-        ICommand* commands[64];
-        short commands_count;
+        std::vector<ICommand*> commands;
     public:
-        CLIController();
         void begin_reading();
         void register_command(ICommand* command);
-        void execute_command(char* command_name,
-                char args[256][256]);
+        void execute_command(std::string command_name,
+                std::vector<std::string> args);
         ~CLIController();
 };

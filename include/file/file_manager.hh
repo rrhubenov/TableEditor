@@ -1,7 +1,9 @@
+#pragma once
+
 #include "./subject.hh"
 #include "../table/observer.hh"
-#include <fstream>
 
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -10,14 +12,10 @@ class FileManager: public ISubject {
     private:
         std::fstream file_stream;
 
+        void notify();
     public:
-        FileManager();
-
         void attach(IObserver* observer);
 
-        void detach(IObserver* observer);
+        void openFile(std::string file_path);
+};
 
-        void notify();
-
-        openFile(std::string file_path);
-}

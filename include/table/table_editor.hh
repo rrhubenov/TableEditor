@@ -1,3 +1,5 @@
+#pragma once
+
 #include <vector>
 #include <string>
 
@@ -9,12 +11,13 @@
 class TableEditor: public IObserver {
     private:
         FileManager* fileManager;
-        std::vector<*Row> rows;
+        std::vector<Row*> rows;
 
     public:
-        TableEditor();
+        TableEditor(FileManager* fileManager);
 
         void update(std::vector<std::string> lines);
 
-        ~TableEditro();
-}
+        ~TableEditor();
+};
+
