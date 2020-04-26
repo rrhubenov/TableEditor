@@ -1,8 +1,20 @@
-#pragma once
+#include <vector>
+#include <string>
 
-class TableEditor {
+#include "./row.hh"
+#include "../file/file_manager.hh"
+#include "./observer.hh" 
+
+
+class TableEditor: public IObserver {
     private:
-        void file;
-    public:
+        FileManager* fileManager;
+        std::vector<*Row> rows;
 
-};
+    public:
+        TableEditor();
+
+        void update(std::vector<std::string> lines);
+
+        ~TableEditro();
+}

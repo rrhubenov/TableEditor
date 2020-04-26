@@ -1,10 +1,15 @@
 #pragma once
+#include "commands.hh"
 
 class CLIController {
     private:
-        void commands;//List
+        ICommand* commands[64];
+        short commands_count;
     public:
-        void register_command(void command);
-        void execute_command(void command_name, void args);
-        void access_data(void data_name);
+        CLIController();
+        void begin_reading();
+        void register_command(ICommand* command);
+        void execute_command(char* command_name,
+                char args[256][256]);
+        ~CLIController();
 };
