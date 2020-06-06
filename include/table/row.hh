@@ -5,11 +5,13 @@
 
 class Row {
     private:
-        std::vector<Cell*> cells;
+        int rowNumber;
+        std::vector<const Cell*> cells;
 
     public:
-        Cell* getCell(int column);
-        void addCell(std::string value, int column);
+        Row(int rowNumber);
+        Cell* getCell(int);
+        void addCell(const Cell &);
 
         ~Row();
 };
