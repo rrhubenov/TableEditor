@@ -1,5 +1,0 @@
-- Logger
-- Opening files
-- Editing filed
-- Cell class?
-

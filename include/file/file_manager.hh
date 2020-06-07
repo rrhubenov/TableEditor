@@ -11,11 +11,18 @@
 class FileManager: public ISubject {
     private:
         std::fstream file_stream;
+        std::string file_path;
 
         void notify();
     public:
+        FileManager();
+
         void attach(IObserver* observer);
 
-        void openFile(std::string file_path);
+        void open(std::string file_path);
+        void save(std::string contents);
+        void saveAs(std::string file_path, std::string contents);
+
+        ~FileManager();
 };
 
