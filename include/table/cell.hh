@@ -9,6 +9,7 @@ class Cell {
         std::string value;
     public:
         Cell(int row, int column, std::string value);
+        virtual ~Cell() = 0;
 
         virtual double parse() = 0;
         virtual void print() = 0;
@@ -17,9 +18,9 @@ class Cell {
         int getColumn() const;
         std::string getRawValue() const;
 
-        virtual double operator+(Cell*) = 0; 
-        virtual double operator*(Cell*) = 0;
-        virtual double operator/(Cell*) = 0;
+        virtual double operator+(Cell*); 
+        virtual double operator*(Cell*);
+        virtual double operator/(Cell*);
 };
 
 
@@ -27,6 +28,11 @@ class FormulaCell: public Cell {
     private:
         Cell* lhsCell;
         Cell* rhsCell;
+    public:
+        FormulaCell(int row, int column, std::string value);
+
+        double parse();
+        void print();
 };
 
 class StringCell: public Cell {
@@ -35,11 +41,13 @@ class StringCell: public Cell {
 
         double parse();
         void print();
-
-        double operator+(Cell*);
-        double operator*(Cell*);
-        double operator/(Cell*);
 };
 
-class DoubleCell: public Cell {};
+class DoubleCell: public Cell {
+    public:
+        DoubleCell(int row, int column, std::string value);
+
+        double parse();
+        void print();
+};
 
