@@ -1,12 +1,20 @@
 #include "../../include/file/file_manager.hh"
 #include "../../include/table/observer.hh"
 #include <string>
+#include <iostream>
+#include <fstream>
 
+FileManager::FileManager() {
+    this->file_path = "";
+}
 
-void FileManager::openFile(std::string file_path) {
+void FileManager::open(std::string file_path) {
     this->file_stream.open(file_path);
+    this->file_path = file_path;
 
     this->notify();
+
+    this->file_stream.close();
 }
 
 void FileManager::attach(IObserver* observer) {
@@ -27,4 +35,22 @@ void FileManager::notify() {
     }
 }
 
+void FileManager::save(std::string contents){
+    if(this->file_path != "") {
+        this->file_stream.open(file_path);
+        this->file_stream << contents;
+        this->file_stream.close();
+    } else {
+        std::cout << "ERROR: No file open." << "\n";
+    }
+}
 
+void FileManager::saveAs(std::string file_path, std::string contents) {
+    std::ofstream output_file(file_path);
+    output_file << contents;
+    output_file.close();
+}
+
+FileManager::~FileManager() {
+    this->file_stream.close();
+}
