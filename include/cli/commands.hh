@@ -37,6 +37,11 @@ class Open: public ICommand {
         std::string getName();
 };
 
+/*! \brief Command for closing an opened file.
+
+Uses the file manager to close opened files.
+Can only open files after closing.
+*/
 class Close: public ICommand {
     private:
         FileManager* fileManager;
@@ -48,6 +53,10 @@ class Close: public ICommand {
         std::string getName();
 };
 
+/*! \brief Command for saving changes in the current file.
+
+Uses the table editor to write changes to the opened file.
+*/
 class Save: public ICommand {
     private:
         TableEditor* tableEditor;
@@ -59,6 +68,10 @@ class Save: public ICommand {
         std::string getName();
 };
 
+/*! \brief Command for saving changes as a new file
+
+Uses the table editor to write the changes to a new file
+*/
 class SaveAs: public ICommand {
     private:
         TableEditor* tableEditor;
@@ -70,6 +83,9 @@ class SaveAs: public ICommand {
         std::string getName();
 };
 
+/*! \brief Command that prints the available commands
+
+*/
 class Help: public ICommand {
     public:
         Help();
@@ -78,6 +94,10 @@ class Help: public ICommand {
         std::string getName();
 };
 
+/*! \brief Command that exits the application
+
+Uses the exit() function to shut down the application
+*/
 class Exit: public ICommand {
     public:
         Exit();
@@ -86,6 +106,11 @@ class Exit: public ICommand {
         std::string getName();
 };
 
+/*! \brief Command that prints the current table
+
+Uses the table editor to print all the cells in the 
+current file.
+*/
 class Print: public ICommand {
     private:
         TableEditor* tableEditor;
@@ -97,6 +122,12 @@ class Print: public ICommand {
         std::string getName();
 };
 
+
+/*! \brief Command for editing a cell in a table.
+
+Uses the table editor to add/edit a cell in 
+the current file.
+*/
 class Edit: public ICommand {
     private:
         TableEditor* tableEditor;
