@@ -1,0 +1,52 @@
+\hypertarget{class_table_editor}{}\doxysection{Table\+Editor Class Reference}
+\label{class_table_editor}\index{TableEditor@{TableEditor}}
+Inheritance diagram for Table\+Editor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_table_editor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}\label{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}} 
+{\bfseries Table\+Editor} (\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$file\+Manager)
+\item 
+\mbox{\Hypertarget{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}\label{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}} 
+void {\bfseries save} ()
+\item 
+\mbox{\Hypertarget{class_table_editor_ab52d94f60fe02fb121b166478498fafe}\label{class_table_editor_ab52d94f60fe02fb121b166478498fafe}} 
+void {\bfseries save\+As} (std\+::string file\+\_\+path)
+\item 
+\mbox{\Hypertarget{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}\label{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}} 
+void {\bfseries add\+Cell} (unsigned row, unsigned column, std\+::string value)
+\item 
+\mbox{\Hypertarget{class_table_editor_a375a23323f79bf9e282928ef24a4259b}\label{class_table_editor_a375a23323f79bf9e282928ef24a4259b}} 
+void {\bfseries update} (std\+::vector$<$ std\+::string $>$ lines)
+\item 
+\mbox{\Hypertarget{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}\label{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}} 
+void {\bfseries print} ()
+\item 
+\mbox{\Hypertarget{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}\label{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}} 
+void {\bfseries destroy\+Rows} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}\label{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}} 
+std\+::string {\bfseries to\+Raw} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}\label{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}} 
+\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$ {\bfseries file\+Manager}
+\item 
+\mbox{\Hypertarget{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}\label{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}} 
+std\+::vector$<$ \mbox{\hyperlink{class_row}{Row}} $\ast$ $>$ {\bfseries rows}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/table/table\+\_\+editor.\+hh\end{DoxyCompactItemize}

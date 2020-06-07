@@ -1,0 +1,57 @@
+\hypertarget{class_i_command}{}\doxysection{I\+Command Class Reference}
+\label{class_i_command}\index{ICommand@{ICommand}}
+
+
+Interface for all thec commands.  
+
+
+
+
+{\ttfamily \#include $<$commands.\+hh$>$}
+
+Inheritance diagram for I\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_i_command}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_i_command_a6d34e814b55f346166b8ad3cb1480821}{execute}} (std\+::vector$<$ std\+::string $>$ args)=0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_i_command_a9f76ea4a58d139e5fb1340a865d01ed4}{get\+Name}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for all thec commands. 
+
+Following the Command pattern, this interface has an execute method which accepts args. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_command_a6d34e814b55f346166b8ad3cb1480821}\label{class_i_command_a6d34e814b55f346166b8ad3cb1480821}} 
+\index{ICommand@{ICommand}!execute@{execute}}
+\index{execute@{execute}!ICommand@{ICommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void I\+Command\+::execute (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Runs the business logic for the command 
+
+Implemented in \mbox{\hyperlink{class_edit_a610d31760eb8abd1dd25bd06d47dc21f}{Edit}}, \mbox{\hyperlink{class_print_a47b35a3e51ef69966367134f06493648}{Print}}, \mbox{\hyperlink{class_exit_ac50565d79641ebbbbd147af66e73fc35}{Exit}}, \mbox{\hyperlink{class_help_a4bdd196f79673e660f03399d78fff454}{Help}}, \mbox{\hyperlink{class_save_as_a3e0ea9f425b144545213d95fe1cf09c0}{Save\+As}}, \mbox{\hyperlink{class_save_a47ba3e1ed7a616f3bb4ec8d0da0bd000}{Save}}, \mbox{\hyperlink{class_close_ab17b62a57523b13a66be6ca8e0228328}{Close}}, and \mbox{\hyperlink{class_open_aa2bc85de46caa8a0cb88b2e111d54e17}{Open}}.
+
+\mbox{\Hypertarget{class_i_command_a9f76ea4a58d139e5fb1340a865d01ed4}\label{class_i_command_a9f76ea4a58d139e5fb1340a865d01ed4}} 
+\index{ICommand@{ICommand}!getName@{getName}}
+\index{getName@{getName}!ICommand@{ICommand}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string I\+Command\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Method that specifies the command\textquotesingle{}s name 
+
+Implemented in \mbox{\hyperlink{class_edit_a5bd010e504837e86734c23be3e277e32}{Edit}}, \mbox{\hyperlink{class_print_a0d6fecd264bf0a563fe8da7fc502356d}{Print}}, \mbox{\hyperlink{class_exit_a984dea2352b7788c07d334e79e4936d0}{Exit}}, \mbox{\hyperlink{class_help_abb45e3d3c6a75fd02aa15d2d0a3d732d}{Help}}, \mbox{\hyperlink{class_save_as_a4c402d054e306502306757a90a292cb7}{Save\+As}}, \mbox{\hyperlink{class_save_a587ac9e592408ed9a86d4a6cd912a830}{Save}}, \mbox{\hyperlink{class_close_aefcae7ed3ae7116e7accb83c9fce79ef}{Close}}, and \mbox{\hyperlink{class_open_ac12b8b64888ae42ae7308646e1754028}{Open}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cli/commands.\+hh\end{DoxyCompactItemize}

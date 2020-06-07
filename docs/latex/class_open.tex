@@ -1,0 +1,66 @@
+\hypertarget{class_open}{}\doxysection{Open Class Reference}
+\label{class_open}\index{Open@{Open}}
+
+
+Command for opening a document.  
+
+
+
+
+{\ttfamily \#include $<$commands.\+hh$>$}
+
+Inheritance diagram for Open\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_open_a95be7d6da0f6c1454586f379d0250e76}\label{class_open_a95be7d6da0f6c1454586f379d0250e76}} 
+{\bfseries Open} (\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$file\+Manager)
+\item 
+void \mbox{\hyperlink{class_open_aa2bc85de46caa8a0cb88b2e111d54e17}{execute}} (std\+::vector$<$ std\+::string $>$ args)
+\item 
+std\+::string \mbox{\hyperlink{class_open_ac12b8b64888ae42ae7308646e1754028}{get\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_open_aae18fa748ad4ce0e344f868db25bb40a}\label{class_open_aae18fa748ad4ce0e344f868db25bb40a}} 
+\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$ {\bfseries file\+Manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Command for opening a document. 
+
+Uses the file manager to open files by giving it a file path 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_open_aa2bc85de46caa8a0cb88b2e111d54e17}\label{class_open_aa2bc85de46caa8a0cb88b2e111d54e17}} 
+\index{Open@{Open}!execute@{execute}}
+\index{execute@{execute}!Open@{Open}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Open\+::execute (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Runs the business logic for the command 
+
+Implements \mbox{\hyperlink{class_i_command_a6d34e814b55f346166b8ad3cb1480821}{I\+Command}}.
+
+\mbox{\Hypertarget{class_open_ac12b8b64888ae42ae7308646e1754028}\label{class_open_ac12b8b64888ae42ae7308646e1754028}} 
+\index{Open@{Open}!getName@{getName}}
+\index{getName@{getName}!Open@{Open}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Open\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Method that specifies the command\textquotesingle{}s name 
+
+Implements \mbox{\hyperlink{class_i_command_a9f76ea4a58d139e5fb1340a865d01ed4}{I\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cli/commands.\+hh\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{class_c_l_i_controller}{}\doxysection{C\+L\+I\+Controller Class Reference}
+\label{class_c_l_i_controller}\index{CLIController@{CLIController}}
+
+
+Class that handles communication with the C\+LI (Command line interface)  
+
+
+
+
+{\ttfamily \#include $<$cli\+\_\+controller.\+hh$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_l_i_controller_adf0ba548f2f9f5cd6a8a88f82bc89747}{begin\+\_\+reading}} ()
+\item 
+void \mbox{\hyperlink{class_c_l_i_controller_a6de954aff686a9093fd12b4766989629}{register\+\_\+command}} (\mbox{\hyperlink{class_i_command}{I\+Command}} $\ast$command)
+\item 
+\mbox{\hyperlink{class_c_l_i_controller_ab3f415c38091dea7951273cff790a8f0}{$\sim$\+C\+L\+I\+Controller}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_l_i_controller_a26f9de9f803f70444ca45fa1fcf3ffe1}{execute\+\_\+command}} (std\+::string command\+\_\+name, std\+::vector$<$ std\+::string $>$ args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_i_command}{I\+Command}} $\ast$ $>$ \mbox{\hyperlink{class_c_l_i_controller_aac12b1e912b011b30cda755b7b2e3090}{commands}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handles communication with the C\+LI (Command line interface) 
+
+It\textquotesingle{}s main goal is to recognise and execute commands. It is a part of the Command pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_l_i_controller_ab3f415c38091dea7951273cff790a8f0}\label{class_c_l_i_controller_ab3f415c38091dea7951273cff790a8f0}} 
+\index{CLIController@{CLIController}!````~CLIController@{$\sim$CLIController}}
+\index{````~CLIController@{$\sim$CLIController}!CLIController@{CLIController}}
+\doxysubsubsection{\texorpdfstring{$\sim$CLIController()}{~CLIController()}}
+{\footnotesize\ttfamily C\+L\+I\+Controller\+::$\sim$\+C\+L\+I\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor frees all the commands 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_l_i_controller_adf0ba548f2f9f5cd6a8a88f82bc89747}\label{class_c_l_i_controller_adf0ba548f2f9f5cd6a8a88f82bc89747}} 
+\index{CLIController@{CLIController}!begin\_reading@{begin\_reading}}
+\index{begin\_reading@{begin\_reading}!CLIController@{CLIController}}
+\doxysubsubsection{\texorpdfstring{begin\_reading()}{begin\_reading()}}
+{\footnotesize\ttfamily void C\+L\+I\+Controller\+::begin\+\_\+reading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads and parses lines from the C\+LI \mbox{\Hypertarget{class_c_l_i_controller_a26f9de9f803f70444ca45fa1fcf3ffe1}\label{class_c_l_i_controller_a26f9de9f803f70444ca45fa1fcf3ffe1}} 
+\index{CLIController@{CLIController}!execute\_command@{execute\_command}}
+\index{execute\_command@{execute\_command}!CLIController@{CLIController}}
+\doxysubsubsection{\texorpdfstring{execute\_command()}{execute\_command()}}
+{\footnotesize\ttfamily void C\+L\+I\+Controller\+::execute\+\_\+command (\begin{DoxyParamCaption}\item[{std\+::string}]{command\+\_\+name,  }\item[{std\+::vector$<$ std\+::string $>$}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Finds the command based on the given name and triggers the commands execute() method by passing it the given args \mbox{\Hypertarget{class_c_l_i_controller_a6de954aff686a9093fd12b4766989629}\label{class_c_l_i_controller_a6de954aff686a9093fd12b4766989629}} 
+\index{CLIController@{CLIController}!register\_command@{register\_command}}
+\index{register\_command@{register\_command}!CLIController@{CLIController}}
+\doxysubsubsection{\texorpdfstring{register\_command()}{register\_command()}}
+{\footnotesize\ttfamily void C\+L\+I\+Controller\+::register\+\_\+command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_command}{I\+Command}} $\ast$}]{command }\end{DoxyParamCaption})}
+
+Adds the command to the commands vector 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_l_i_controller_aac12b1e912b011b30cda755b7b2e3090}\label{class_c_l_i_controller_aac12b1e912b011b30cda755b7b2e3090}} 
+\index{CLIController@{CLIController}!commands@{commands}}
+\index{commands@{commands}!CLIController@{CLIController}}
+\doxysubsubsection{\texorpdfstring{commands}{commands}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_i_command}{I\+Command}}$\ast$$>$ C\+L\+I\+Controller\+::commands\hspace{0.3cm}{\ttfamily [private]}}
+
+List of registered commands 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/cli/cli\+\_\+controller.\+hh\end{DoxyCompactItemize}
