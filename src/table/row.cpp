@@ -12,10 +12,6 @@ void Row::destroyCells() {
     this->cells.clear();
 }
 
-Cell* Row::getCell(int column) {
-    return this->cells[column - 1];
-}
-
 void Row::trim(std::string & value) {
     std::string::iterator it = value.begin();
 
