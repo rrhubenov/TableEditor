@@ -74,34 +74,39 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;./cell.hh&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_row.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_row.html">Row</a> {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordtype">int</span> rowNumber;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        std::vector&lt;Cell*&gt; cells;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">bool</span> isValueDouble(<span class="keyword">const</span> std::string &amp;);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">bool</span> isValueString(<span class="keyword">const</span> std::string &amp;);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">bool</span> isValueEmpty(<span class="keyword">const</span> std::string &amp;);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">void</span> trim(std::string &amp;);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_row.html">Row</a>(<span class="keywordtype">int</span> rowNumber);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_cell.html">Cell</a>* getCell(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">unsigned</span> getCellCount();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> addCell(<span class="keywordtype">unsigned</span> column, std::string value);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> destroyCells();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> print();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::string toRaw();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ~<a class="code" href="class_row.html">Row</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_row.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_row.html">Row</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_row.html#a6ab745db7dd09bd73b94fd8b90d38fb8">   13</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_row.html#a6ab745db7dd09bd73b94fd8b90d38fb8">rowNumber</a>; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_row.html#a76a804da30d39bd34ce526451402776f">   14</a></span>&#160;        std::vector&lt;Cell*&gt; <a class="code" href="class_row.html#a76a804da30d39bd34ce526451402776f">cells</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_row.html#a2cfea1ebfe8873748214f526e27de765">   16</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_row.html#a2cfea1ebfe8873748214f526e27de765">isValueDouble</a>(<span class="keyword">const</span> std::string &amp;); </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_row.html#ae6f95c9adb07cc8fa8b3a0de4050a91c">   17</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_row.html#ae6f95c9adb07cc8fa8b3a0de4050a91c">isValueString</a>(<span class="keyword">const</span> std::string &amp;); </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_row.html#a90220b32db40fa23752e6155fb85a97c">   18</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_row.html#a90220b32db40fa23752e6155fb85a97c">isValueEmpty</a>(<span class="keyword">const</span> std::string &amp;); </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_row.html#a12f486082724483a8eab361828af47b4">   20</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_row.html#a12f486082724483a8eab361828af47b4">trim</a>(std::string &amp;); </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_row.html#a7666af9dc60757b1126d577a6e2d4073">   23</a></span>&#160;        <a class="code" href="class_row.html#a7666af9dc60757b1126d577a6e2d4073">Row</a>(<span class="keywordtype">int</span> <a class="code" href="class_row.html#a6ab745db7dd09bd73b94fd8b90d38fb8">rowNumber</a>); </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_row.html#aa50f972d1d0e9334639a8aa98249d737">   25</a></span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_row.html#aa50f972d1d0e9334639a8aa98249d737">getCellCount</a>(); </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_row.html#ace00f72ed2155f571b5365421567b7d4">   26</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_row.html#ace00f72ed2155f571b5365421567b7d4">addCell</a>(<span class="keywordtype">unsigned</span> column, std::string value); </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_row.html#a25c8ceb329ce774df9b95c4330453b91">   29</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_row.html#a25c8ceb329ce774df9b95c4330453b91">destroyCells</a>(); </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_row.html#a47f37f0d1f2e5d26d467f4bf3e79d47a">   31</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_row.html#a47f37f0d1f2e5d26d467f4bf3e79d47a">print</a>(); </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_row.html#a31a2bc9b53b011b53e3d3b14e3b1a5c1">   32</a></span>&#160;        std::string <a class="code" href="class_row.html#a31a2bc9b53b011b53e3d3b14e3b1a5c1">toRaw</a>(); </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_row.html#a8cc0869c91dc94ee595069309ba15690">   34</a></span>&#160;        <a class="code" href="class_row.html#a8cc0869c91dc94ee595069309ba15690">~Row</a>(); </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdef"><b>Definition:</b> cell.hh:5</div></div>
-<div class="ttc" id="aclass_row_html"><div class="ttname"><a href="class_row.html">Row</a></div><div class="ttdef"><b>Definition:</b> row.hh:6</div></div>
+<div class="ttc" id="aclass_row_html_a90220b32db40fa23752e6155fb85a97c"><div class="ttname"><a href="class_row.html#a90220b32db40fa23752e6155fb85a97c">Row::isValueEmpty</a></div><div class="ttdeci">bool isValueEmpty(const std::string &amp;)</div></div>
+<div class="ttc" id="aclass_row_html_aa50f972d1d0e9334639a8aa98249d737"><div class="ttname"><a href="class_row.html#aa50f972d1d0e9334639a8aa98249d737">Row::getCellCount</a></div><div class="ttdeci">unsigned getCellCount()</div></div>
+<div class="ttc" id="aclass_row_html_a8cc0869c91dc94ee595069309ba15690"><div class="ttname"><a href="class_row.html#a8cc0869c91dc94ee595069309ba15690">Row::~Row</a></div><div class="ttdeci">~Row()</div></div>
+<div class="ttc" id="aclass_row_html_a76a804da30d39bd34ce526451402776f"><div class="ttname"><a href="class_row.html#a76a804da30d39bd34ce526451402776f">Row::cells</a></div><div class="ttdeci">std::vector&lt; Cell * &gt; cells</div><div class="ttdef"><b>Definition:</b> row.hh:14</div></div>
+<div class="ttc" id="aclass_row_html_ace00f72ed2155f571b5365421567b7d4"><div class="ttname"><a href="class_row.html#ace00f72ed2155f571b5365421567b7d4">Row::addCell</a></div><div class="ttdeci">void addCell(unsigned column, std::string value)</div></div>
+<div class="ttc" id="aclass_row_html_a7666af9dc60757b1126d577a6e2d4073"><div class="ttname"><a href="class_row.html#a7666af9dc60757b1126d577a6e2d4073">Row::Row</a></div><div class="ttdeci">Row(int rowNumber)</div></div>
+<div class="ttc" id="aclass_row_html_a6ab745db7dd09bd73b94fd8b90d38fb8"><div class="ttname"><a href="class_row.html#a6ab745db7dd09bd73b94fd8b90d38fb8">Row::rowNumber</a></div><div class="ttdeci">int rowNumber</div><div class="ttdef"><b>Definition:</b> row.hh:13</div></div>
+<div class="ttc" id="aclass_row_html"><div class="ttname"><a href="class_row.html">Row</a></div><div class="ttdoc">Class that represents a row in a table.</div><div class="ttdef"><b>Definition:</b> row.hh:11</div></div>
+<div class="ttc" id="aclass_row_html_a47f37f0d1f2e5d26d467f4bf3e79d47a"><div class="ttname"><a href="class_row.html#a47f37f0d1f2e5d26d467f4bf3e79d47a">Row::print</a></div><div class="ttdeci">void print()</div></div>
+<div class="ttc" id="aclass_row_html_ae6f95c9adb07cc8fa8b3a0de4050a91c"><div class="ttname"><a href="class_row.html#ae6f95c9adb07cc8fa8b3a0de4050a91c">Row::isValueString</a></div><div class="ttdeci">bool isValueString(const std::string &amp;)</div></div>
+<div class="ttc" id="aclass_row_html_a2cfea1ebfe8873748214f526e27de765"><div class="ttname"><a href="class_row.html#a2cfea1ebfe8873748214f526e27de765">Row::isValueDouble</a></div><div class="ttdeci">bool isValueDouble(const std::string &amp;)</div></div>
+<div class="ttc" id="aclass_row_html_a12f486082724483a8eab361828af47b4"><div class="ttname"><a href="class_row.html#a12f486082724483a8eab361828af47b4">Row::trim</a></div><div class="ttdeci">void trim(std::string &amp;)</div></div>
+<div class="ttc" id="aclass_row_html_a31a2bc9b53b011b53e3d3b14e3b1a5c1"><div class="ttname"><a href="class_row.html#a31a2bc9b53b011b53e3d3b14e3b1a5c1">Row::toRaw</a></div><div class="ttdeci">std::string toRaw()</div></div>
+<div class="ttc" id="aclass_row_html_a25c8ceb329ce774df9b95c4330453b91"><div class="ttname"><a href="class_row.html#a25c8ceb329ce774df9b95c4330453b91">Row::destroyCells</a></div><div class="ttdeci">void destroyCells()</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

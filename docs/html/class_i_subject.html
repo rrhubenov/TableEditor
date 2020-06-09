@@ -69,31 +69,118 @@ $(function() {
 <div class="title">ISubject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface for designating a class as a subject.  
+ <a href="class_i_subject.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="subject_8hh_source.html">subject.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ISubject:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i_subject.png" usemap="#ISubject_map" alt=""/>
   <map id="ISubject_map" name="ISubject_map">
-<area href="class_file_manager.html" alt="FileManager" shape="rect" coords="0,56,84,80"/>
+<area href="class_file_manager.html" title="Class for working with files." alt="FileManager" shape="rect" coords="0,56,84,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:add1b9cce16468869c29b29c2e81e62fb"><td class="memItemLeft" align="right" valign="top"><a id="add1b9cce16468869c29b29c2e81e62fb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>attach</b> (<a class="el" href="class_i_observer.html">IObserver</a> *observer)=0</td></tr>
+<tr class="memitem:add1b9cce16468869c29b29c2e81e62fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_subject.html#add1b9cce16468869c29b29c2e81e62fb">attach</a> (<a class="el" href="class_i_observer.html">IObserver</a> *observer)=0</td></tr>
 <tr class="separator:add1b9cce16468869c29b29c2e81e62fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494055b38b94a83401c52832ca9c9273"><td class="memItemLeft" align="right" valign="top"><a id="a494055b38b94a83401c52832ca9c9273"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>notify</b> ()=0</td></tr>
+<tr class="memitem:a494055b38b94a83401c52832ca9c9273"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_subject.html#a494055b38b94a83401c52832ca9c9273">notify</a> ()=0</td></tr>
 <tr class="separator:a494055b38b94a83401c52832ca9c9273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a66f4ce666ed8b85d694a9b73d6bc16fb"><td class="memItemLeft" align="right" valign="top"><a id="a66f4ce666ed8b85d694a9b73d6bc16fb"></a>
-std::vector&lt; <a class="el" href="class_i_observer.html">IObserver</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>observers</b></td></tr>
+<tr class="memitem:a66f4ce666ed8b85d694a9b73d6bc16fb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_i_observer.html">IObserver</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_subject.html#a66f4ce666ed8b85d694a9b73d6bc16fb">observers</a></td></tr>
 <tr class="separator:a66f4ce666ed8b85d694a9b73d6bc16fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for designating a class as a subject. </p>
+<p>Hold a list of observers and notifies them for changes based on the implementation of the child classes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="add1b9cce16468869c29b29c2e81e62fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1b9cce16468869c29b29c2e81e62fb">&#9670;&nbsp;</a></span>attach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISubject::attach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i_observer.html">IObserver</a> *&#160;</td>
+          <td class="paramname"><em>observer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add observer to the list </p>
+
+<p>Implemented in <a class="el" href="class_file_manager.html#aab2d07db76b15596ea5b314968067ee4">FileManager</a>.</p>
+
+</div>
+</div>
+<a id="a494055b38b94a83401c52832ca9c9273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a494055b38b94a83401c52832ca9c9273">&#9670;&nbsp;</a></span>notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ISubject::notify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Notify all observers about certain events </p>
+
+<p>Implemented in <a class="el" href="class_file_manager.html#a7086d75949ef0d60701076c883baedda">FileManager</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a66f4ce666ed8b85d694a9b73d6bc16fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f4ce666ed8b85d694a9b73d6bc16fb">&#9670;&nbsp;</a></span>observers</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_i_observer.html">IObserver</a>*&gt; ISubject::observers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List of attached observers </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/file/<a class="el" href="subject_8hh_source.html">subject.hh</a></li>
 </ul>

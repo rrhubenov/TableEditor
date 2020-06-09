@@ -1,5 +1,14 @@
 \hypertarget{class_formula_cell}{}\doxysection{Formula\+Cell Class Reference}
 \label{class_formula_cell}\index{FormulaCell@{FormulaCell}}
+
+
+Class that represents a formula in a cell.  
+
+
+
+
+{\ttfamily \#include $<$cell.\+hh$>$}
+
 Inheritance diagram for Formula\+Cell\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,26 +18,73 @@ Inheritance diagram for Formula\+Cell\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_formula_cell_aa67ba1e16a5e366f7ac6e18886b663ea}\label{class_formula_cell_aa67ba1e16a5e366f7ac6e18886b663ea}} 
-{\bfseries Formula\+Cell} (int row, int column, std\+::string value)
+\mbox{\hyperlink{class_formula_cell_aa67ba1e16a5e366f7ac6e18886b663ea}{Formula\+Cell}} (int \mbox{\hyperlink{class_cell_a85d2a7af6195f5196574790fbc1becfd}{row}}, int \mbox{\hyperlink{class_cell_a6aae9428106f7cd7574660e3c2278ee0}{column}}, std\+::string \mbox{\hyperlink{class_cell_a12b5d2911db693157ac9bc2c5006266e}{value}})
 \item 
-\mbox{\Hypertarget{class_formula_cell_aa9b103e4bb1cc1b38ea34534423beba7}\label{class_formula_cell_aa9b103e4bb1cc1b38ea34534423beba7}} 
-double {\bfseries parse} ()
+double \mbox{\hyperlink{class_formula_cell_aa9b103e4bb1cc1b38ea34534423beba7}{parse}} ()
 \item 
-\mbox{\Hypertarget{class_formula_cell_a85cad58256840c372e650044349cc26e}\label{class_formula_cell_a85cad58256840c372e650044349cc26e}} 
-void {\bfseries print} ()
+void \mbox{\hyperlink{class_formula_cell_a85cad58256840c372e650044349cc26e}{print}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_formula_cell_a4f077f914ddaa14a4f9782cca9f9efc7}\label{class_formula_cell_a4f077f914ddaa14a4f9782cca9f9efc7}} 
-\mbox{\hyperlink{class_cell}{Cell}} $\ast$ {\bfseries lhs\+Cell}
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_formula_cell_a4f077f914ddaa14a4f9782cca9f9efc7}{lhs\+Cell}}
 \item 
-\mbox{\Hypertarget{class_formula_cell_a3f5319d991d4d8da7c94c0f8661d386b}\label{class_formula_cell_a3f5319d991d4d8da7c94c0f8661d386b}} 
-\mbox{\hyperlink{class_cell}{Cell}} $\ast$ {\bfseries rhs\+Cell}
+\mbox{\hyperlink{class_cell}{Cell}} $\ast$ \mbox{\hyperlink{class_formula_cell_a3f5319d991d4d8da7c94c0f8661d386b}{rhs\+Cell}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+Class that represents a formula in a cell. 
+
+Holds pointers to the cells it operates with. When parsing, it determines the operation by reading the raw value and parses the two cells. After which it executes the operation on the parsed value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_formula_cell_aa67ba1e16a5e366f7ac6e18886b663ea}\label{class_formula_cell_aa67ba1e16a5e366f7ac6e18886b663ea}} 
+\index{FormulaCell@{FormulaCell}!FormulaCell@{FormulaCell}}
+\index{FormulaCell@{FormulaCell}!FormulaCell@{FormulaCell}}
+\doxysubsubsection{\texorpdfstring{FormulaCell()}{FormulaCell()}}
+{\footnotesize\ttfamily Formula\+Cell\+::\+Formula\+Cell (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+Uses the parent constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_formula_cell_aa9b103e4bb1cc1b38ea34534423beba7}\label{class_formula_cell_aa9b103e4bb1cc1b38ea34534423beba7}} 
+\index{FormulaCell@{FormulaCell}!parse@{parse}}
+\index{parse@{parse}!FormulaCell@{FormulaCell}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily double Formula\+Cell\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Parses lhs\+Cell and rhs\+Cell after which executes the operation on them 
+
+Implements \mbox{\hyperlink{class_cell_a4cc359b4d6d61cac2cabab35aaae801a}{Cell}}.
+
+\mbox{\Hypertarget{class_formula_cell_a85cad58256840c372e650044349cc26e}\label{class_formula_cell_a85cad58256840c372e650044349cc26e}} 
+\index{FormulaCell@{FormulaCell}!print@{print}}
+\index{print@{print}!FormulaCell@{FormulaCell}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Formula\+Cell\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints the parsed value to the screen 
+
+Implements \mbox{\hyperlink{class_cell_a1bcc6a3d405a0356b1251fcd5bf02513}{Cell}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_formula_cell_a4f077f914ddaa14a4f9782cca9f9efc7}\label{class_formula_cell_a4f077f914ddaa14a4f9782cca9f9efc7}} 
+\index{FormulaCell@{FormulaCell}!lhsCell@{lhsCell}}
+\index{lhsCell@{lhsCell}!FormulaCell@{FormulaCell}}
+\doxysubsubsection{\texorpdfstring{lhsCell}{lhsCell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}}$\ast$ Formula\+Cell\+::lhs\+Cell\hspace{0.3cm}{\ttfamily [private]}}
+
+Left-\/hand side cell in the formula \mbox{\Hypertarget{class_formula_cell_a3f5319d991d4d8da7c94c0f8661d386b}\label{class_formula_cell_a3f5319d991d4d8da7c94c0f8661d386b}} 
+\index{FormulaCell@{FormulaCell}!rhsCell@{rhsCell}}
+\index{rhsCell@{rhsCell}!FormulaCell@{FormulaCell}}
+\doxysubsubsection{\texorpdfstring{rhsCell}{rhsCell}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cell}{Cell}}$\ast$ Formula\+Cell\+::rhs\+Cell\hspace{0.3cm}{\ttfamily [private]}}
+
+Right-\/hand side cell in the formula 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -1,54 +1,142 @@
 \hypertarget{class_row}{}\doxysection{Row Class Reference}
 \label{class_row}\index{Row@{Row}}
+
+
+Class that represents a row in a table.  
+
+
+
+
+{\ttfamily \#include $<$row.\+hh$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_row_a7666af9dc60757b1126d577a6e2d4073}\label{class_row_a7666af9dc60757b1126d577a6e2d4073}} 
-{\bfseries Row} (int row\+Number)
+\mbox{\hyperlink{class_row_a7666af9dc60757b1126d577a6e2d4073}{Row}} (int \mbox{\hyperlink{class_row_a6ab745db7dd09bd73b94fd8b90d38fb8}{row\+Number}})
 \item 
-\mbox{\Hypertarget{class_row_a21e18c366df992ba0a20107d7f7ed9a9}\label{class_row_a21e18c366df992ba0a20107d7f7ed9a9}} 
-\mbox{\hyperlink{class_cell}{Cell}} $\ast$ {\bfseries get\+Cell} (int)
+unsigned \mbox{\hyperlink{class_row_aa50f972d1d0e9334639a8aa98249d737}{get\+Cell\+Count}} ()
 \item 
-\mbox{\Hypertarget{class_row_aa50f972d1d0e9334639a8aa98249d737}\label{class_row_aa50f972d1d0e9334639a8aa98249d737}} 
-unsigned {\bfseries get\+Cell\+Count} ()
+void \mbox{\hyperlink{class_row_ace00f72ed2155f571b5365421567b7d4}{add\+Cell}} (unsigned column, std\+::string value)
 \item 
-\mbox{\Hypertarget{class_row_ace00f72ed2155f571b5365421567b7d4}\label{class_row_ace00f72ed2155f571b5365421567b7d4}} 
-void {\bfseries add\+Cell} (unsigned column, std\+::string value)
+void \mbox{\hyperlink{class_row_a25c8ceb329ce774df9b95c4330453b91}{destroy\+Cells}} ()
 \item 
-\mbox{\Hypertarget{class_row_a25c8ceb329ce774df9b95c4330453b91}\label{class_row_a25c8ceb329ce774df9b95c4330453b91}} 
-void {\bfseries destroy\+Cells} ()
+void \mbox{\hyperlink{class_row_a47f37f0d1f2e5d26d467f4bf3e79d47a}{print}} ()
 \item 
-\mbox{\Hypertarget{class_row_a47f37f0d1f2e5d26d467f4bf3e79d47a}\label{class_row_a47f37f0d1f2e5d26d467f4bf3e79d47a}} 
-void {\bfseries print} ()
+std\+::string \mbox{\hyperlink{class_row_a31a2bc9b53b011b53e3d3b14e3b1a5c1}{to\+Raw}} ()
 \item 
-\mbox{\Hypertarget{class_row_a31a2bc9b53b011b53e3d3b14e3b1a5c1}\label{class_row_a31a2bc9b53b011b53e3d3b14e3b1a5c1}} 
-std\+::string {\bfseries to\+Raw} ()
+\mbox{\hyperlink{class_row_a8cc0869c91dc94ee595069309ba15690}{$\sim$\+Row}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_row_a2cfea1ebfe8873748214f526e27de765}\label{class_row_a2cfea1ebfe8873748214f526e27de765}} 
-bool {\bfseries is\+Value\+Double} (const std\+::string \&)
+bool \mbox{\hyperlink{class_row_a2cfea1ebfe8873748214f526e27de765}{is\+Value\+Double}} (const std\+::string \&)
 \item 
-\mbox{\Hypertarget{class_row_ae6f95c9adb07cc8fa8b3a0de4050a91c}\label{class_row_ae6f95c9adb07cc8fa8b3a0de4050a91c}} 
-bool {\bfseries is\+Value\+String} (const std\+::string \&)
+bool \mbox{\hyperlink{class_row_ae6f95c9adb07cc8fa8b3a0de4050a91c}{is\+Value\+String}} (const std\+::string \&)
 \item 
-\mbox{\Hypertarget{class_row_a90220b32db40fa23752e6155fb85a97c}\label{class_row_a90220b32db40fa23752e6155fb85a97c}} 
-bool {\bfseries is\+Value\+Empty} (const std\+::string \&)
+bool \mbox{\hyperlink{class_row_a90220b32db40fa23752e6155fb85a97c}{is\+Value\+Empty}} (const std\+::string \&)
 \item 
-\mbox{\Hypertarget{class_row_a12f486082724483a8eab361828af47b4}\label{class_row_a12f486082724483a8eab361828af47b4}} 
-void {\bfseries trim} (std\+::string \&)
+void \mbox{\hyperlink{class_row_a12f486082724483a8eab361828af47b4}{trim}} (std\+::string \&)
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_row_a6ab745db7dd09bd73b94fd8b90d38fb8}\label{class_row_a6ab745db7dd09bd73b94fd8b90d38fb8}} 
-int {\bfseries row\+Number}
+int \mbox{\hyperlink{class_row_a6ab745db7dd09bd73b94fd8b90d38fb8}{row\+Number}}
 \item 
-\mbox{\Hypertarget{class_row_a76a804da30d39bd34ce526451402776f}\label{class_row_a76a804da30d39bd34ce526451402776f}} 
-std\+::vector$<$ \mbox{\hyperlink{class_cell}{Cell}} $\ast$ $>$ {\bfseries cells}
+std\+::vector$<$ \mbox{\hyperlink{class_cell}{Cell}} $\ast$ $>$ \mbox{\hyperlink{class_row_a76a804da30d39bd34ce526451402776f}{cells}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that represents a row in a table. 
+
+Each row class holds the cells which lay on it. This way the row becomes a pseudo Cell\+Manager. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_row_a7666af9dc60757b1126d577a6e2d4073}\label{class_row_a7666af9dc60757b1126d577a6e2d4073}} 
+\index{Row@{Row}!Row@{Row}}
+\index{Row@{Row}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{Row()}{Row()}}
+{\footnotesize\ttfamily Row\+::\+Row (\begin{DoxyParamCaption}\item[{int}]{row\+Number }\end{DoxyParamCaption})}
+
+Sets the value of the row number \mbox{\Hypertarget{class_row_a8cc0869c91dc94ee595069309ba15690}\label{class_row_a8cc0869c91dc94ee595069309ba15690}} 
+\index{Row@{Row}!````~Row@{$\sim$Row}}
+\index{````~Row@{$\sim$Row}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{$\sim$Row()}{~Row()}}
+{\footnotesize\ttfamily Row\+::$\sim$\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees all the cells in the row 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_row_ace00f72ed2155f571b5365421567b7d4}\label{class_row_ace00f72ed2155f571b5365421567b7d4}} 
+\index{Row@{Row}!addCell@{addCell}}
+\index{addCell@{addCell}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{addCell()}{addCell()}}
+{\footnotesize\ttfamily void Row\+::add\+Cell (\begin{DoxyParamCaption}\item[{unsigned}]{column,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+Logic for adding a cell to the row. If the column does not exists, the row gets populated with empty cells until the column is reached. \mbox{\Hypertarget{class_row_a25c8ceb329ce774df9b95c4330453b91}\label{class_row_a25c8ceb329ce774df9b95c4330453b91}} 
+\index{Row@{Row}!destroyCells@{destroyCells}}
+\index{destroyCells@{destroyCells}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{destroyCells()}{destroyCells()}}
+{\footnotesize\ttfamily void Row\+::destroy\+Cells (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Logic for freeing all the cells in the row \mbox{\Hypertarget{class_row_aa50f972d1d0e9334639a8aa98249d737}\label{class_row_aa50f972d1d0e9334639a8aa98249d737}} 
+\index{Row@{Row}!getCellCount@{getCellCount}}
+\index{getCellCount@{getCellCount}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{getCellCount()}{getCellCount()}}
+{\footnotesize\ttfamily unsigned Row\+::get\+Cell\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the amount of cells in the row \mbox{\Hypertarget{class_row_a2cfea1ebfe8873748214f526e27de765}\label{class_row_a2cfea1ebfe8873748214f526e27de765}} 
+\index{Row@{Row}!isValueDouble@{isValueDouble}}
+\index{isValueDouble@{isValueDouble}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{isValueDouble()}{isValueDouble()}}
+{\footnotesize\ttfamily bool Row\+::is\+Value\+Double (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check if a values is a double \mbox{\Hypertarget{class_row_a90220b32db40fa23752e6155fb85a97c}\label{class_row_a90220b32db40fa23752e6155fb85a97c}} 
+\index{Row@{Row}!isValueEmpty@{isValueEmpty}}
+\index{isValueEmpty@{isValueEmpty}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{isValueEmpty()}{isValueEmpty()}}
+{\footnotesize\ttfamily bool Row\+::is\+Value\+Empty (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check if a values is empty \mbox{\Hypertarget{class_row_ae6f95c9adb07cc8fa8b3a0de4050a91c}\label{class_row_ae6f95c9adb07cc8fa8b3a0de4050a91c}} 
+\index{Row@{Row}!isValueString@{isValueString}}
+\index{isValueString@{isValueString}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{isValueString()}{isValueString()}}
+{\footnotesize\ttfamily bool Row\+::is\+Value\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Check if a value is a string \mbox{\Hypertarget{class_row_a47f37f0d1f2e5d26d467f4bf3e79d47a}\label{class_row_a47f37f0d1f2e5d26d467f4bf3e79d47a}} 
+\index{Row@{Row}!print@{print}}
+\index{print@{print}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Row\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\hyperlink{class_print}{Print}} all the cells in the row with a \textquotesingle{},\textquotesingle{} delimeter \mbox{\Hypertarget{class_row_a31a2bc9b53b011b53e3d3b14e3b1a5c1}\label{class_row_a31a2bc9b53b011b53e3d3b14e3b1a5c1}} 
+\index{Row@{Row}!toRaw@{toRaw}}
+\index{toRaw@{toRaw}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{toRaw()}{toRaw()}}
+{\footnotesize\ttfamily std\+::string Row\+::to\+Raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Return the raw values of all the cells \mbox{\Hypertarget{class_row_a12f486082724483a8eab361828af47b4}\label{class_row_a12f486082724483a8eab361828af47b4}} 
+\index{Row@{Row}!trim@{trim}}
+\index{trim@{trim}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily void Row\+::trim (\begin{DoxyParamCaption}\item[{std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Trims a string from trailing whitepsaces from front and back 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_row_a76a804da30d39bd34ce526451402776f}\label{class_row_a76a804da30d39bd34ce526451402776f}} 
+\index{Row@{Row}!cells@{cells}}
+\index{cells@{cells}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{cells}{cells}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_cell}{Cell}}$\ast$$>$ Row\+::cells\hspace{0.3cm}{\ttfamily [private]}}
+
+The list of all the cells in the row \mbox{\Hypertarget{class_row_a6ab745db7dd09bd73b94fd8b90d38fb8}\label{class_row_a6ab745db7dd09bd73b94fd8b90d38fb8}} 
+\index{Row@{Row}!rowNumber@{rowNumber}}
+\index{rowNumber@{rowNumber}!Row@{Row}}
+\doxysubsubsection{\texorpdfstring{rowNumber}{rowNumber}}
+{\footnotesize\ttfamily int Row\+::row\+Number\hspace{0.3cm}{\ttfamily [private]}}
+
+The row number in the table 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

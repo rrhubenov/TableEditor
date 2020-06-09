@@ -1,5 +1,14 @@
 \hypertarget{class_i_observer}{}\doxysection{I\+Observer Class Reference}
 \label{class_i_observer}\index{IObserver@{IObserver}}
+
+
+Interface that describes an observer class.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+hh$>$}
+
 Inheritance diagram for I\+Observer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,9 +18,28 @@ Inheritance diagram for I\+Observer\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_i_observer_a3cb03fdce302c975435260441bceb5c1}\label{class_i_observer_a3cb03fdce302c975435260441bceb5c1}} 
-virtual void {\bfseries update} (std\+::vector$<$ std\+::string $>$ lines)=0
+virtual void \mbox{\hyperlink{class_i_observer_a3cb03fdce302c975435260441bceb5c1}{update}} (std\+::vector$<$ std\+::string $>$ lines)=0
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface that describes an observer class. 
+
+Used for the Observer pattern.
+
+Whenever an event triggers on a Subject, \mbox{\hyperlink{class_i_observer_a3cb03fdce302c975435260441bceb5c1}{update()}} is called and the changes are received by the observers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_observer_a3cb03fdce302c975435260441bceb5c1}\label{class_i_observer_a3cb03fdce302c975435260441bceb5c1}} 
+\index{IObserver@{IObserver}!update@{update}}
+\index{update@{update}!IObserver@{IObserver}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void I\+Observer\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{lines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Method for the subjects to notify the observers 
+
+Implemented in \mbox{\hyperlink{class_table_editor_a375a23323f79bf9e282928ef24a4259b}{Table\+Editor}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

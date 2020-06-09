@@ -68,22 +68,60 @@ $(function() {
 <div class="title">IObserver Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Interface that describes an observer class.  
+ <a href="class_i_observer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="observer_8hh_source.html">observer.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IObserver:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i_observer.png" usemap="#IObserver_map" alt=""/>
   <map id="IObserver_map" name="IObserver_map">
-<area href="class_table_editor.html" alt="TableEditor" shape="rect" coords="0,56,76,80"/>
+<area href="class_table_editor.html" title="Class that handles changes to the current table." alt="TableEditor" shape="rect" coords="0,56,76,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3cb03fdce302c975435260441bceb5c1"><td class="memItemLeft" align="right" valign="top"><a id="a3cb03fdce302c975435260441bceb5c1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (std::vector&lt; std::string &gt; lines)=0</td></tr>
+<tr class="memitem:a3cb03fdce302c975435260441bceb5c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_observer.html#a3cb03fdce302c975435260441bceb5c1">update</a> (std::vector&lt; std::string &gt; lines)=0</td></tr>
 <tr class="separator:a3cb03fdce302c975435260441bceb5c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface that describes an observer class. </p>
+<p>Used for the Observer pattern.</p>
+<p>Whenever an event triggers on a Subject, <a class="el" href="class_i_observer.html#a3cb03fdce302c975435260441bceb5c1">update()</a> is called and the changes are received by the observers. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3cb03fdce302c975435260441bceb5c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb03fdce302c975435260441bceb5c1">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void IObserver::update </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>lines</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Method for the subjects to notify the observers </p>
+
+<p>Implemented in <a class="el" href="class_table_editor.html#a375a23323f79bf9e282928ef24a4259b">TableEditor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/table/<a class="el" href="observer_8hh_source.html">observer.hh</a></li>
 </ul>

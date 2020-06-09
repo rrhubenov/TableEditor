@@ -78,29 +78,33 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_file_manager.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_manager.html">FileManager</a>: <span class="keyword">public</span> <a class="code" href="class_i_subject.html">ISubject</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::fstream file_stream;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::string file_path;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">void</span> notify();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_file_manager.html">FileManager</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> attach(<a class="code" href="class_i_observer.html">IObserver</a>* observer);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> open(std::string file_path);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> save(std::string contents);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> saveAs(std::string file_path, std::string contents);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        ~<a class="code" href="class_file_manager.html">FileManager</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_file_manager.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_manager.html">FileManager</a>: <span class="keyword">public</span> <a class="code" href="class_i_subject.html">ISubject</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_file_manager.html#a085a947394909565aa3d5e981ec741b3">   21</a></span>&#160;        std::fstream <a class="code" href="class_file_manager.html#a085a947394909565aa3d5e981ec741b3">file_stream</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_file_manager.html#ae5069b8fc4b698045d79f962775debc7">   22</a></span>&#160;        std::string <a class="code" href="class_file_manager.html#ae5069b8fc4b698045d79f962775debc7">file_path</a>; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_file_manager.html#a7086d75949ef0d60701076c883baedda">   24</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_manager.html#a7086d75949ef0d60701076c883baedda">notify</a>(); </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_file_manager.html#a8afd512c06be9daf140cc19d71f9b391">   26</a></span>&#160;        <a class="code" href="class_file_manager.html#a8afd512c06be9daf140cc19d71f9b391">FileManager</a>(); </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_file_manager.html#aab2d07db76b15596ea5b314968067ee4">   28</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_manager.html#aab2d07db76b15596ea5b314968067ee4">attach</a>(<a class="code" href="class_i_observer.html">IObserver</a>* observer); </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_file_manager.html#a3b811d6f0d9f62eaeb4722f23c6488c4">   31</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_manager.html#a3b811d6f0d9f62eaeb4722f23c6488c4">open</a>(std::string <a class="code" href="class_file_manager.html#ae5069b8fc4b698045d79f962775debc7">file_path</a>); </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_file_manager.html#a6b1527c3de33f29b5af606c7a4185fd5">   32</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_manager.html#a6b1527c3de33f29b5af606c7a4185fd5">save</a>(std::string contents); </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_file_manager.html#a5b6cffa2cac932a6fe4adb43627ba6f8">   33</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_file_manager.html#a5b6cffa2cac932a6fe4adb43627ba6f8">saveAs</a>(std::string <a class="code" href="class_file_manager.html#ae5069b8fc4b698045d79f962775debc7">file_path</a>, std::string contents); </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_file_manager.html#abaed33b5b0c13b8a597db9335a1aacfa">   35</a></span>&#160;        <a class="code" href="class_file_manager.html#abaed33b5b0c13b8a597db9335a1aacfa">~FileManager</a>(); </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_i_subject_html"><div class="ttname"><a href="class_i_subject.html">ISubject</a></div><div class="ttdef"><b>Definition:</b> subject.hh:7</div></div>
-<div class="ttc" id="aclass_file_manager_html"><div class="ttname"><a href="class_file_manager.html">FileManager</a></div><div class="ttdef"><b>Definition:</b> file_manager.hh:11</div></div>
-<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdef"><b>Definition:</b> observer.hh:6</div></div>
+<div class="ttc" id="aclass_file_manager_html_a6b1527c3de33f29b5af606c7a4185fd5"><div class="ttname"><a href="class_file_manager.html#a6b1527c3de33f29b5af606c7a4185fd5">FileManager::save</a></div><div class="ttdeci">void save(std::string contents)</div></div>
+<div class="ttc" id="aclass_file_manager_html_abaed33b5b0c13b8a597db9335a1aacfa"><div class="ttname"><a href="class_file_manager.html#abaed33b5b0c13b8a597db9335a1aacfa">FileManager::~FileManager</a></div><div class="ttdeci">~FileManager()</div></div>
+<div class="ttc" id="aclass_file_manager_html_ae5069b8fc4b698045d79f962775debc7"><div class="ttname"><a href="class_file_manager.html#ae5069b8fc4b698045d79f962775debc7">FileManager::file_path</a></div><div class="ttdeci">std::string file_path</div><div class="ttdef"><b>Definition:</b> file_manager.hh:22</div></div>
+<div class="ttc" id="aclass_file_manager_html_a3b811d6f0d9f62eaeb4722f23c6488c4"><div class="ttname"><a href="class_file_manager.html#a3b811d6f0d9f62eaeb4722f23c6488c4">FileManager::open</a></div><div class="ttdeci">void open(std::string file_path)</div></div>
+<div class="ttc" id="aclass_file_manager_html_aab2d07db76b15596ea5b314968067ee4"><div class="ttname"><a href="class_file_manager.html#aab2d07db76b15596ea5b314968067ee4">FileManager::attach</a></div><div class="ttdeci">void attach(IObserver *observer)</div></div>
+<div class="ttc" id="aclass_i_subject_html"><div class="ttname"><a href="class_i_subject.html">ISubject</a></div><div class="ttdoc">Interface for designating a class as a subject.</div><div class="ttdef"><b>Definition:</b> subject.hh:12</div></div>
+<div class="ttc" id="aclass_file_manager_html"><div class="ttname"><a href="class_file_manager.html">FileManager</a></div><div class="ttdoc">Class for working with files.</div><div class="ttdef"><b>Definition:</b> file_manager.hh:19</div></div>
+<div class="ttc" id="aclass_file_manager_html_a085a947394909565aa3d5e981ec741b3"><div class="ttname"><a href="class_file_manager.html#a085a947394909565aa3d5e981ec741b3">FileManager::file_stream</a></div><div class="ttdeci">std::fstream file_stream</div><div class="ttdef"><b>Definition:</b> file_manager.hh:21</div></div>
+<div class="ttc" id="aclass_file_manager_html_a5b6cffa2cac932a6fe4adb43627ba6f8"><div class="ttname"><a href="class_file_manager.html#a5b6cffa2cac932a6fe4adb43627ba6f8">FileManager::saveAs</a></div><div class="ttdeci">void saveAs(std::string file_path, std::string contents)</div></div>
+<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdoc">Interface that describes an observer class.</div><div class="ttdef"><b>Definition:</b> observer.hh:13</div></div>
+<div class="ttc" id="aclass_file_manager_html_a7086d75949ef0d60701076c883baedda"><div class="ttname"><a href="class_file_manager.html#a7086d75949ef0d60701076c883baedda">FileManager::notify</a></div><div class="ttdeci">void notify()</div></div>
+<div class="ttc" id="aclass_file_manager_html_a8afd512c06be9daf140cc19d71f9b391"><div class="ttname"><a href="class_file_manager.html#a8afd512c06be9daf140cc19d71f9b391">FileManager::FileManager</a></div><div class="ttdeci">FileManager()</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

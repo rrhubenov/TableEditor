@@ -79,34 +79,37 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;./observer.hh&quot;</span> </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_table_editor.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_table_editor.html">TableEditor</a>: <span class="keyword">public</span> <a class="code" href="class_i_observer.html">IObserver</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_file_manager.html">FileManager</a>* fileManager;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::vector&lt;Row*&gt; rows;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        std::string toRaw();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_table_editor.html">TableEditor</a>(<a class="code" href="class_file_manager.html">FileManager</a>* fileManager);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> save();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> saveAs(std::string file_path);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> addCell(<span class="keywordtype">unsigned</span> row, <span class="keywordtype">unsigned</span> column, std::string value);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> update(std::vector&lt;std::string&gt; lines);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> print();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> destroyRows();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        ~<a class="code" href="class_table_editor.html">TableEditor</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_table_editor.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_table_editor.html">TableEditor</a>: <span class="keyword">public</span> <a class="code" href="class_i_observer.html">IObserver</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_table_editor.html#a830cedd99a6555ddfa03ebc54ea6b23c">   19</a></span>&#160;        <a class="code" href="class_file_manager.html">FileManager</a>* <a class="code" href="class_table_editor.html#a830cedd99a6555ddfa03ebc54ea6b23c">fileManager</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_table_editor.html#ada6970ef8d985bebe6bfc7aa727adbdb">   20</a></span>&#160;        std::vector&lt;Row*&gt; <a class="code" href="class_table_editor.html#ada6970ef8d985bebe6bfc7aa727adbdb">rows</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_table_editor.html#acf4cfbd833d708c2a6476ad52ee18b0c">   22</a></span>&#160;        std::string <a class="code" href="class_table_editor.html#acf4cfbd833d708c2a6476ad52ee18b0c">toRaw</a>(); </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_table_editor.html#a0b7ef71972cbac9b27474cd289ea4489">   25</a></span>&#160;        <a class="code" href="class_table_editor.html#a0b7ef71972cbac9b27474cd289ea4489">TableEditor</a>(<a class="code" href="class_file_manager.html">FileManager</a>* <a class="code" href="class_table_editor.html#a830cedd99a6555ddfa03ebc54ea6b23c">fileManager</a>); </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_table_editor.html#a94c94ea9c5d43ef2cd3e33fef610f90d">   27</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_table_editor.html#a94c94ea9c5d43ef2cd3e33fef610f90d">save</a>(); </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_table_editor.html#ab52d94f60fe02fb121b166478498fafe">   28</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_table_editor.html#ab52d94f60fe02fb121b166478498fafe">saveAs</a>(std::string file_path); </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_table_editor.html#a1de8da69b34c2c2389e8592cf42c222c">   30</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_table_editor.html#a1de8da69b34c2c2389e8592cf42c222c">addCell</a>(<span class="keywordtype">unsigned</span> row, <span class="keywordtype">unsigned</span> column, std::string value); </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_table_editor.html#a375a23323f79bf9e282928ef24a4259b">   33</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_table_editor.html#a375a23323f79bf9e282928ef24a4259b">update</a>(std::vector&lt;std::string&gt; lines); </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_table_editor.html#a3d0cf086a990de6948a4471dafe31d2f">   35</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_table_editor.html#a3d0cf086a990de6948a4471dafe31d2f">print</a>(); </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_table_editor.html#afc84046c3cc0b5fd5352d965620417e3">   37</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_table_editor.html#afc84046c3cc0b5fd5352d965620417e3">destroyRows</a>(); </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_table_editor.html#a8c96a197a5f16265af6209513256b365">   39</a></span>&#160;        <a class="code" href="class_table_editor.html#a8c96a197a5f16265af6209513256b365">~TableEditor</a>(); </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_file_manager_html"><div class="ttname"><a href="class_file_manager.html">FileManager</a></div><div class="ttdef"><b>Definition:</b> file_manager.hh:11</div></div>
-<div class="ttc" id="aclass_table_editor_html"><div class="ttname"><a href="class_table_editor.html">TableEditor</a></div><div class="ttdef"><b>Definition:</b> table_editor.hh:11</div></div>
-<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdef"><b>Definition:</b> observer.hh:6</div></div>
+<div class="ttc" id="aclass_table_editor_html_a8c96a197a5f16265af6209513256b365"><div class="ttname"><a href="class_table_editor.html#a8c96a197a5f16265af6209513256b365">TableEditor::~TableEditor</a></div><div class="ttdeci">~TableEditor()</div></div>
+<div class="ttc" id="aclass_table_editor_html_a830cedd99a6555ddfa03ebc54ea6b23c"><div class="ttname"><a href="class_table_editor.html#a830cedd99a6555ddfa03ebc54ea6b23c">TableEditor::fileManager</a></div><div class="ttdeci">FileManager * fileManager</div><div class="ttdef"><b>Definition:</b> table_editor.hh:19</div></div>
+<div class="ttc" id="aclass_table_editor_html_a1de8da69b34c2c2389e8592cf42c222c"><div class="ttname"><a href="class_table_editor.html#a1de8da69b34c2c2389e8592cf42c222c">TableEditor::addCell</a></div><div class="ttdeci">void addCell(unsigned row, unsigned column, std::string value)</div></div>
+<div class="ttc" id="aclass_table_editor_html_ab52d94f60fe02fb121b166478498fafe"><div class="ttname"><a href="class_table_editor.html#ab52d94f60fe02fb121b166478498fafe">TableEditor::saveAs</a></div><div class="ttdeci">void saveAs(std::string file_path)</div></div>
+<div class="ttc" id="aclass_table_editor_html_acf4cfbd833d708c2a6476ad52ee18b0c"><div class="ttname"><a href="class_table_editor.html#acf4cfbd833d708c2a6476ad52ee18b0c">TableEditor::toRaw</a></div><div class="ttdeci">std::string toRaw()</div></div>
+<div class="ttc" id="aclass_table_editor_html_a0b7ef71972cbac9b27474cd289ea4489"><div class="ttname"><a href="class_table_editor.html#a0b7ef71972cbac9b27474cd289ea4489">TableEditor::TableEditor</a></div><div class="ttdeci">TableEditor(FileManager *fileManager)</div></div>
+<div class="ttc" id="aclass_file_manager_html"><div class="ttname"><a href="class_file_manager.html">FileManager</a></div><div class="ttdoc">Class for working with files.</div><div class="ttdef"><b>Definition:</b> file_manager.hh:19</div></div>
+<div class="ttc" id="aclass_table_editor_html_a3d0cf086a990de6948a4471dafe31d2f"><div class="ttname"><a href="class_table_editor.html#a3d0cf086a990de6948a4471dafe31d2f">TableEditor::print</a></div><div class="ttdeci">void print()</div></div>
+<div class="ttc" id="aclass_table_editor_html"><div class="ttname"><a href="class_table_editor.html">TableEditor</a></div><div class="ttdoc">Class that handles changes to the current table.</div><div class="ttdef"><b>Definition:</b> table_editor.hh:17</div></div>
+<div class="ttc" id="aclass_table_editor_html_a94c94ea9c5d43ef2cd3e33fef610f90d"><div class="ttname"><a href="class_table_editor.html#a94c94ea9c5d43ef2cd3e33fef610f90d">TableEditor::save</a></div><div class="ttdeci">void save()</div></div>
+<div class="ttc" id="aclass_table_editor_html_ada6970ef8d985bebe6bfc7aa727adbdb"><div class="ttname"><a href="class_table_editor.html#ada6970ef8d985bebe6bfc7aa727adbdb">TableEditor::rows</a></div><div class="ttdeci">std::vector&lt; Row * &gt; rows</div><div class="ttdef"><b>Definition:</b> table_editor.hh:20</div></div>
+<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdoc">Interface that describes an observer class.</div><div class="ttdef"><b>Definition:</b> observer.hh:13</div></div>
+<div class="ttc" id="aclass_table_editor_html_afc84046c3cc0b5fd5352d965620417e3"><div class="ttname"><a href="class_table_editor.html#afc84046c3cc0b5fd5352d965620417e3">TableEditor::destroyRows</a></div><div class="ttdeci">void destroyRows()</div></div>
+<div class="ttc" id="aclass_table_editor_html_a375a23323f79bf9e282928ef24a4259b"><div class="ttname"><a href="class_table_editor.html#a375a23323f79bf9e282928ef24a4259b">TableEditor::update</a></div><div class="ttdeci">void update(std::vector&lt; std::string &gt; lines)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

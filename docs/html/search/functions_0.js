@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['begin_5freading_45',['begin_reading',['../class_c_l_i_controller.html#adf0ba548f2f9f5cd6a8a88f82bc89747',1,'CLIController']]]
+  ['addcell_78',['addCell',['../class_row.html#ace00f72ed2155f571b5365421567b7d4',1,'Row::addCell()'],['../class_table_editor.html#a1de8da69b34c2c2389e8592cf42c222c',1,'TableEditor::addCell()']]],
+  ['attach_79',['attach',['../class_file_manager.html#aab2d07db76b15596ea5b314968067ee4',1,'FileManager::attach()'],['../class_i_subject.html#add1b9cce16468869c29b29c2e81e62fb',1,'ISubject::attach()']]]
 ];

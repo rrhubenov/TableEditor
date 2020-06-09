@@ -1,5 +1,14 @@
 \hypertarget{class_table_editor}{}\doxysection{Table\+Editor Class Reference}
 \label{class_table_editor}\index{TableEditor@{TableEditor}}
+
+
+Class that handles changes to the current table.  
+
+
+
+
+{\ttfamily \#include $<$table\+\_\+editor.\+hh$>$}
+
 Inheritance diagram for Table\+Editor\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,43 +18,119 @@ Inheritance diagram for Table\+Editor\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}\label{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}} 
-{\bfseries Table\+Editor} (\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$file\+Manager)
+\mbox{\hyperlink{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}{Table\+Editor}} (\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$\mbox{\hyperlink{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}{file\+Manager}})
 \item 
-\mbox{\Hypertarget{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}\label{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}} 
-void {\bfseries save} ()
+void \mbox{\hyperlink{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}{save}} ()
 \item 
-\mbox{\Hypertarget{class_table_editor_ab52d94f60fe02fb121b166478498fafe}\label{class_table_editor_ab52d94f60fe02fb121b166478498fafe}} 
-void {\bfseries save\+As} (std\+::string file\+\_\+path)
+void \mbox{\hyperlink{class_table_editor_ab52d94f60fe02fb121b166478498fafe}{save\+As}} (std\+::string file\+\_\+path)
 \item 
-\mbox{\Hypertarget{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}\label{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}} 
-void {\bfseries add\+Cell} (unsigned row, unsigned column, std\+::string value)
+void \mbox{\hyperlink{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}{add\+Cell}} (unsigned row, unsigned column, std\+::string value)
 \item 
-\mbox{\Hypertarget{class_table_editor_a375a23323f79bf9e282928ef24a4259b}\label{class_table_editor_a375a23323f79bf9e282928ef24a4259b}} 
-void {\bfseries update} (std\+::vector$<$ std\+::string $>$ lines)
+void \mbox{\hyperlink{class_table_editor_a375a23323f79bf9e282928ef24a4259b}{update}} (std\+::vector$<$ std\+::string $>$ lines)
 \item 
-\mbox{\Hypertarget{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}\label{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}} 
-void {\bfseries print} ()
+void \mbox{\hyperlink{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}{print}} ()
 \item 
-\mbox{\Hypertarget{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}\label{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}} 
-void {\bfseries destroy\+Rows} ()
+void \mbox{\hyperlink{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}{destroy\+Rows}} ()
+\item 
+\mbox{\hyperlink{class_table_editor_a8c96a197a5f16265af6209513256b365}{$\sim$\+Table\+Editor}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}\label{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}} 
-std\+::string {\bfseries to\+Raw} ()
+std\+::string \mbox{\hyperlink{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}{to\+Raw}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}\label{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}} 
-\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$ {\bfseries file\+Manager}
+\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$ \mbox{\hyperlink{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}{file\+Manager}}
 \item 
-\mbox{\Hypertarget{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}\label{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}} 
-std\+::vector$<$ \mbox{\hyperlink{class_row}{Row}} $\ast$ $>$ {\bfseries rows}
+std\+::vector$<$ \mbox{\hyperlink{class_row}{Row}} $\ast$ $>$ \mbox{\hyperlink{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}{rows}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Class that handles changes to the current table. 
+
+Uses the file manager to receive/write changes from/to files. Consists of a vector of rows and handles the logic for adding more rows. This way it becomes a pseud Row\+Manager. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}\label{class_table_editor_a0b7ef71972cbac9b27474cd289ea4489}} 
+\index{TableEditor@{TableEditor}!TableEditor@{TableEditor}}
+\index{TableEditor@{TableEditor}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{TableEditor()}{TableEditor()}}
+{\footnotesize\ttfamily Table\+Editor\+::\+Table\+Editor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_file_manager}{File\+Manager}} $\ast$}]{file\+Manager }\end{DoxyParamCaption})}
+
+Initializes the file manager pointer \mbox{\Hypertarget{class_table_editor_a8c96a197a5f16265af6209513256b365}\label{class_table_editor_a8c96a197a5f16265af6209513256b365}} 
+\index{TableEditor@{TableEditor}!````~TableEditor@{$\sim$TableEditor}}
+\index{````~TableEditor@{$\sim$TableEditor}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{$\sim$TableEditor()}{~TableEditor()}}
+{\footnotesize\ttfamily Table\+Editor\+::$\sim$\+Table\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees all the rows 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}\label{class_table_editor_a1de8da69b34c2c2389e8592cf42c222c}} 
+\index{TableEditor@{TableEditor}!addCell@{addCell}}
+\index{addCell@{addCell}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{addCell()}{addCell()}}
+{\footnotesize\ttfamily void Table\+Editor\+::add\+Cell (\begin{DoxyParamCaption}\item[{unsigned}]{row,  }\item[{unsigned}]{column,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+Handles the logic for adding a cell to a row. If the row does not exist, more are created until the given row is reached \mbox{\Hypertarget{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}\label{class_table_editor_afc84046c3cc0b5fd5352d965620417e3}} 
+\index{TableEditor@{TableEditor}!destroyRows@{destroyRows}}
+\index{destroyRows@{destroyRows}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{destroyRows()}{destroyRows()}}
+{\footnotesize\ttfamily void Table\+Editor\+::destroy\+Rows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Frees all the rows \mbox{\Hypertarget{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}\label{class_table_editor_a3d0cf086a990de6948a4471dafe31d2f}} 
+\index{TableEditor@{TableEditor}!print@{print}}
+\index{print@{print}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Table\+Editor\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints all the row values by using a new line between the rows \mbox{\Hypertarget{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}\label{class_table_editor_a94c94ea9c5d43ef2cd3e33fef610f90d}} 
+\index{TableEditor@{TableEditor}!save@{save}}
+\index{save@{save}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void Table\+Editor\+::save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Saves all the values in the rows by using the file manager in the current file \mbox{\Hypertarget{class_table_editor_ab52d94f60fe02fb121b166478498fafe}\label{class_table_editor_ab52d94f60fe02fb121b166478498fafe}} 
+\index{TableEditor@{TableEditor}!saveAs@{saveAs}}
+\index{saveAs@{saveAs}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{saveAs()}{saveAs()}}
+{\footnotesize\ttfamily void Table\+Editor\+::save\+As (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+Saves all the values in the rows by using the file manager to the given file \mbox{\Hypertarget{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}\label{class_table_editor_acf4cfbd833d708c2a6476ad52ee18b0c}} 
+\index{TableEditor@{TableEditor}!toRaw@{toRaw}}
+\index{toRaw@{toRaw}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{toRaw()}{toRaw()}}
+{\footnotesize\ttfamily std\+::string Table\+Editor\+::to\+Raw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Returns the raw values of all the cells in all the rows \mbox{\Hypertarget{class_table_editor_a375a23323f79bf9e282928ef24a4259b}\label{class_table_editor_a375a23323f79bf9e282928ef24a4259b}} 
+\index{TableEditor@{TableEditor}!update@{update}}
+\index{update@{update}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Table\+Editor\+::update (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{lines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Populates the rows by parsing the lines 
+
+Implements \mbox{\hyperlink{class_i_observer_a3cb03fdce302c975435260441bceb5c1}{I\+Observer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}\label{class_table_editor_a830cedd99a6555ddfa03ebc54ea6b23c}} 
+\index{TableEditor@{TableEditor}!fileManager@{fileManager}}
+\index{fileManager@{fileManager}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{fileManager}{fileManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_file_manager}{File\+Manager}}$\ast$ Table\+Editor\+::file\+Manager\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the file manager \mbox{\Hypertarget{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}\label{class_table_editor_ada6970ef8d985bebe6bfc7aa727adbdb}} 
+\index{TableEditor@{TableEditor}!rows@{rows}}
+\index{rows@{rows}!TableEditor@{TableEditor}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_row}{Row}}$\ast$$>$ Table\+Editor\+::rows\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector of rows 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

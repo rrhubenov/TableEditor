@@ -1,5 +1,14 @@
 \hypertarget{class_file_manager}{}\doxysection{File\+Manager Class Reference}
 \label{class_file_manager}\index{FileManager@{FileManager}}
+
+
+Class for working with files.  
+
+
+
+
+{\ttfamily \#include $<$file\+\_\+manager.\+hh$>$}
+
 Inheritance diagram for File\+Manager\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,35 +18,110 @@ Inheritance diagram for File\+Manager\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_file_manager_aab2d07db76b15596ea5b314968067ee4}\label{class_file_manager_aab2d07db76b15596ea5b314968067ee4}} 
-void {\bfseries attach} (\mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$observer)
+\mbox{\hyperlink{class_file_manager_a8afd512c06be9daf140cc19d71f9b391}{File\+Manager}} ()
 \item 
-\mbox{\Hypertarget{class_file_manager_a3b811d6f0d9f62eaeb4722f23c6488c4}\label{class_file_manager_a3b811d6f0d9f62eaeb4722f23c6488c4}} 
-void {\bfseries open} (std\+::string file\+\_\+path)
+void \mbox{\hyperlink{class_file_manager_aab2d07db76b15596ea5b314968067ee4}{attach}} (\mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$observer)
 \item 
-\mbox{\Hypertarget{class_file_manager_a6b1527c3de33f29b5af606c7a4185fd5}\label{class_file_manager_a6b1527c3de33f29b5af606c7a4185fd5}} 
-void {\bfseries save} (std\+::string contents)
+void \mbox{\hyperlink{class_file_manager_a3b811d6f0d9f62eaeb4722f23c6488c4}{open}} (std\+::string \mbox{\hyperlink{class_file_manager_ae5069b8fc4b698045d79f962775debc7}{file\+\_\+path}})
 \item 
-\mbox{\Hypertarget{class_file_manager_a5b6cffa2cac932a6fe4adb43627ba6f8}\label{class_file_manager_a5b6cffa2cac932a6fe4adb43627ba6f8}} 
-void {\bfseries save\+As} (std\+::string file\+\_\+path, std\+::string contents)
+void \mbox{\hyperlink{class_file_manager_a6b1527c3de33f29b5af606c7a4185fd5}{save}} (std\+::string contents)
+\item 
+void \mbox{\hyperlink{class_file_manager_a5b6cffa2cac932a6fe4adb43627ba6f8}{save\+As}} (std\+::string \mbox{\hyperlink{class_file_manager_ae5069b8fc4b698045d79f962775debc7}{file\+\_\+path}}, std\+::string contents)
+\item 
+\mbox{\hyperlink{class_file_manager_abaed33b5b0c13b8a597db9335a1aacfa}{$\sim$\+File\+Manager}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_file_manager_a7086d75949ef0d60701076c883baedda}\label{class_file_manager_a7086d75949ef0d60701076c883baedda}} 
-void {\bfseries notify} ()
+void \mbox{\hyperlink{class_file_manager_a7086d75949ef0d60701076c883baedda}{notify}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_file_manager_a085a947394909565aa3d5e981ec741b3}\label{class_file_manager_a085a947394909565aa3d5e981ec741b3}} 
-std\+::fstream {\bfseries file\+\_\+stream}
+std\+::fstream \mbox{\hyperlink{class_file_manager_a085a947394909565aa3d5e981ec741b3}{file\+\_\+stream}}
 \item 
-\mbox{\Hypertarget{class_file_manager_ae5069b8fc4b698045d79f962775debc7}\label{class_file_manager_ae5069b8fc4b698045d79f962775debc7}} 
-std\+::string {\bfseries file\+\_\+path}
+std\+::string \mbox{\hyperlink{class_file_manager_ae5069b8fc4b698045d79f962775debc7}{file\+\_\+path}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+Class for working with files. 
+
+The Observer pattern is used so that more editor types can be hooked to this class. When opening a file all observers are notified and the lines in the file are sent to them.
+
+Main reason for using the Observer pattern was for educational purposes 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_file_manager_a8afd512c06be9daf140cc19d71f9b391}\label{class_file_manager_a8afd512c06be9daf140cc19d71f9b391}} 
+\index{FileManager@{FileManager}!FileManager@{FileManager}}
+\index{FileManager@{FileManager}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{FileManager()}{FileManager()}}
+{\footnotesize\ttfamily File\+Manager\+::\+File\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets the file path to a black string \mbox{\Hypertarget{class_file_manager_abaed33b5b0c13b8a597db9335a1aacfa}\label{class_file_manager_abaed33b5b0c13b8a597db9335a1aacfa}} 
+\index{FileManager@{FileManager}!````~FileManager@{$\sim$FileManager}}
+\index{````~FileManager@{$\sim$FileManager}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$FileManager()}{~FileManager()}}
+{\footnotesize\ttfamily File\+Manager\+::$\sim$\+File\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Closes the file stream 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file_manager_aab2d07db76b15596ea5b314968067ee4}\label{class_file_manager_aab2d07db76b15596ea5b314968067ee4}} 
+\index{FileManager@{FileManager}!attach@{attach}}
+\index{attach@{attach}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void File\+Manager\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Method for the Observer pattern. Attaches an observer to the list of observers 
+
+Implements \mbox{\hyperlink{class_i_subject_add1b9cce16468869c29b29c2e81e62fb}{I\+Subject}}.
+
+\mbox{\Hypertarget{class_file_manager_a7086d75949ef0d60701076c883baedda}\label{class_file_manager_a7086d75949ef0d60701076c883baedda}} 
+\index{FileManager@{FileManager}!notify@{notify}}
+\index{notify@{notify}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily void File\+Manager\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+Method for the Observer pattern. Notifies all observers for changes 
+
+Implements \mbox{\hyperlink{class_i_subject_a494055b38b94a83401c52832ca9c9273}{I\+Subject}}.
+
+\mbox{\Hypertarget{class_file_manager_a3b811d6f0d9f62eaeb4722f23c6488c4}\label{class_file_manager_a3b811d6f0d9f62eaeb4722f23c6488c4}} 
+\index{FileManager@{FileManager}!open@{open}}
+\index{open@{open}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily void File\+Manager\+::open (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+path }\end{DoxyParamCaption})}
+
+Sets the file stream to the given file \mbox{\Hypertarget{class_file_manager_a6b1527c3de33f29b5af606c7a4185fd5}\label{class_file_manager_a6b1527c3de33f29b5af606c7a4185fd5}} 
+\index{FileManager@{FileManager}!save@{save}}
+\index{save@{save}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily void File\+Manager\+::save (\begin{DoxyParamCaption}\item[{std\+::string}]{contents }\end{DoxyParamCaption})}
+
+Saves the contents to the current file \mbox{\Hypertarget{class_file_manager_a5b6cffa2cac932a6fe4adb43627ba6f8}\label{class_file_manager_a5b6cffa2cac932a6fe4adb43627ba6f8}} 
+\index{FileManager@{FileManager}!saveAs@{saveAs}}
+\index{saveAs@{saveAs}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{saveAs()}{saveAs()}}
+{\footnotesize\ttfamily void File\+Manager\+::save\+As (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+\_\+path,  }\item[{std\+::string}]{contents }\end{DoxyParamCaption})}
+
+Saves the contents to a given file 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_file_manager_ae5069b8fc4b698045d79f962775debc7}\label{class_file_manager_ae5069b8fc4b698045d79f962775debc7}} 
+\index{FileManager@{FileManager}!file\_path@{file\_path}}
+\index{file\_path@{file\_path}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{file\_path}{file\_path}}
+{\footnotesize\ttfamily std\+::string File\+Manager\+::file\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+Path to the current file since fstream does not store it \mbox{\Hypertarget{class_file_manager_a085a947394909565aa3d5e981ec741b3}\label{class_file_manager_a085a947394909565aa3d5e981ec741b3}} 
+\index{FileManager@{FileManager}!file\_stream@{file\_stream}}
+\index{file\_stream@{file\_stream}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{file\_stream}{file\_stream}}
+{\footnotesize\ttfamily std\+::fstream File\+Manager\+::file\+\_\+stream\hspace{0.3cm}{\ttfamily [private]}}
+
+File stream for the current file 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

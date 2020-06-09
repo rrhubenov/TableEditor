@@ -1,5 +1,14 @@
 \hypertarget{class_i_subject}{}\doxysection{I\+Subject Class Reference}
 \label{class_i_subject}\index{ISubject@{ISubject}}
+
+
+Interface for designating a class as a subject.  
+
+
+
+
+{\ttfamily \#include $<$subject.\+hh$>$}
+
 Inheritance diagram for I\+Subject\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,19 +18,53 @@ Inheritance diagram for I\+Subject\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_i_subject_add1b9cce16468869c29b29c2e81e62fb}\label{class_i_subject_add1b9cce16468869c29b29c2e81e62fb}} 
-virtual void {\bfseries attach} (\mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$observer)=0
+virtual void \mbox{\hyperlink{class_i_subject_add1b9cce16468869c29b29c2e81e62fb}{attach}} (\mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$observer)=0
 \item 
-\mbox{\Hypertarget{class_i_subject_a494055b38b94a83401c52832ca9c9273}\label{class_i_subject_a494055b38b94a83401c52832ca9c9273}} 
-virtual void {\bfseries notify} ()=0
+virtual void \mbox{\hyperlink{class_i_subject_a494055b38b94a83401c52832ca9c9273}{notify}} ()=0
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_i_subject_a66f4ce666ed8b85d694a9b73d6bc16fb}\label{class_i_subject_a66f4ce666ed8b85d694a9b73d6bc16fb}} 
-std\+::vector$<$ \mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$ $>$ {\bfseries observers}
+std\+::vector$<$ \mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$ $>$ \mbox{\hyperlink{class_i_subject_a66f4ce666ed8b85d694a9b73d6bc16fb}{observers}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Interface for designating a class as a subject. 
+
+Hold a list of observers and notifies them for changes based on the implementation of the child classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_i_subject_add1b9cce16468869c29b29c2e81e62fb}\label{class_i_subject_add1b9cce16468869c29b29c2e81e62fb}} 
+\index{ISubject@{ISubject}!attach@{attach}}
+\index{attach@{attach}!ISubject@{ISubject}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily virtual void I\+Subject\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_observer}{I\+Observer}} $\ast$}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Add observer to the list 
+
+Implemented in \mbox{\hyperlink{class_file_manager_aab2d07db76b15596ea5b314968067ee4}{File\+Manager}}.
+
+\mbox{\Hypertarget{class_i_subject_a494055b38b94a83401c52832ca9c9273}\label{class_i_subject_a494055b38b94a83401c52832ca9c9273}} 
+\index{ISubject@{ISubject}!notify@{notify}}
+\index{notify@{notify}!ISubject@{ISubject}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily virtual void I\+Subject\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Notify all observers about certain events 
+
+Implemented in \mbox{\hyperlink{class_file_manager_a7086d75949ef0d60701076c883baedda}{File\+Manager}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_i_subject_a66f4ce666ed8b85d694a9b73d6bc16fb}\label{class_i_subject_a66f4ce666ed8b85d694a9b73d6bc16fb}} 
+\index{ISubject@{ISubject}!observers@{observers}}
+\index{observers@{observers}!ISubject@{ISubject}}
+\doxysubsubsection{\texorpdfstring{observers}{observers}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_i_observer}{I\+Observer}}$\ast$$>$ I\+Subject\+::observers\hspace{0.3cm}{\ttfamily [protected]}}
+
+List of attached observers 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

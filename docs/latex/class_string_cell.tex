@@ -1,5 +1,14 @@
 \hypertarget{class_string_cell}{}\doxysection{String\+Cell Class Reference}
 \label{class_string_cell}\index{StringCell@{StringCell}}
+
+
+Class that represents a cell with a string value.  
+
+
+
+
+{\ttfamily \#include $<$cell.\+hh$>$}
+
 Inheritance diagram for String\+Cell\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,16 +18,50 @@ Inheritance diagram for String\+Cell\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_string_cell_a1aadc6dee20be1a5ad01519dd44788f3}\label{class_string_cell_a1aadc6dee20be1a5ad01519dd44788f3}} 
-{\bfseries String\+Cell} (int row, int column, std\+::string value)
+\mbox{\hyperlink{class_string_cell_a1aadc6dee20be1a5ad01519dd44788f3}{String\+Cell}} (int \mbox{\hyperlink{class_cell_a85d2a7af6195f5196574790fbc1becfd}{row}}, int \mbox{\hyperlink{class_cell_a6aae9428106f7cd7574660e3c2278ee0}{column}}, std\+::string \mbox{\hyperlink{class_cell_a12b5d2911db693157ac9bc2c5006266e}{value}})
 \item 
-\mbox{\Hypertarget{class_string_cell_af7f46865f7fcdd6b0ce182cae91525b9}\label{class_string_cell_af7f46865f7fcdd6b0ce182cae91525b9}} 
-double {\bfseries parse} ()
+double \mbox{\hyperlink{class_string_cell_af7f46865f7fcdd6b0ce182cae91525b9}{parse}} ()
 \item 
-\mbox{\Hypertarget{class_string_cell_a7ec31883364d86ed46b534ba10bfead4}\label{class_string_cell_a7ec31883364d86ed46b534ba10bfead4}} 
-void {\bfseries print} ()
+void \mbox{\hyperlink{class_string_cell_a7ec31883364d86ed46b534ba10bfead4}{print}} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class that represents a cell with a string value. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_string_cell_a1aadc6dee20be1a5ad01519dd44788f3}\label{class_string_cell_a1aadc6dee20be1a5ad01519dd44788f3}} 
+\index{StringCell@{StringCell}!StringCell@{StringCell}}
+\index{StringCell@{StringCell}!StringCell@{StringCell}}
+\doxysubsubsection{\texorpdfstring{StringCell()}{StringCell()}}
+{\footnotesize\ttfamily String\+Cell\+::\+String\+Cell (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column,  }\item[{std\+::string}]{value }\end{DoxyParamCaption})}
+
+Calls the parent constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_string_cell_af7f46865f7fcdd6b0ce182cae91525b9}\label{class_string_cell_af7f46865f7fcdd6b0ce182cae91525b9}} 
+\index{StringCell@{StringCell}!parse@{parse}}
+\index{parse@{parse}!StringCell@{StringCell}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily double String\+Cell\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Extracts double value from string. If impossible returns 0 
+
+Implements \mbox{\hyperlink{class_cell_a4cc359b4d6d61cac2cabab35aaae801a}{Cell}}.
+
+\mbox{\Hypertarget{class_string_cell_a7ec31883364d86ed46b534ba10bfead4}\label{class_string_cell_a7ec31883364d86ed46b534ba10bfead4}} 
+\index{StringCell@{StringCell}!print@{print}}
+\index{print@{print}!StringCell@{StringCell}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void String\+Cell\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints the raw string to the screen without the quotes 
+
+Implements \mbox{\hyperlink{class_cell_a1bcc6a3d405a0356b1251fcd5bf02513}{Cell}}.
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

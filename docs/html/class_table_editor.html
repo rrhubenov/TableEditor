@@ -70,55 +70,304 @@ $(function() {
 <div class="title">TableEditor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class that handles changes to the current table.  
+ <a href="class_table_editor.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="table__editor_8hh_source.html">table_editor.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for TableEditor:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_table_editor.png" usemap="#TableEditor_map" alt=""/>
   <map id="TableEditor_map" name="TableEditor_map">
-<area href="class_i_observer.html" alt="IObserver" shape="rect" coords="0,0,76,24"/>
+<area href="class_i_observer.html" title="Interface that describes an observer class." alt="IObserver" shape="rect" coords="0,0,76,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0b7ef71972cbac9b27474cd289ea4489"><td class="memItemLeft" align="right" valign="top"><a id="a0b7ef71972cbac9b27474cd289ea4489"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TableEditor</b> (<a class="el" href="class_file_manager.html">FileManager</a> *fileManager)</td></tr>
+<tr class="memitem:a0b7ef71972cbac9b27474cd289ea4489"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a0b7ef71972cbac9b27474cd289ea4489">TableEditor</a> (<a class="el" href="class_file_manager.html">FileManager</a> *<a class="el" href="class_table_editor.html#a830cedd99a6555ddfa03ebc54ea6b23c">fileManager</a>)</td></tr>
 <tr class="separator:a0b7ef71972cbac9b27474cd289ea4489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c94ea9c5d43ef2cd3e33fef610f90d"><td class="memItemLeft" align="right" valign="top"><a id="a94c94ea9c5d43ef2cd3e33fef610f90d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
+<tr class="memitem:a94c94ea9c5d43ef2cd3e33fef610f90d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a94c94ea9c5d43ef2cd3e33fef610f90d">save</a> ()</td></tr>
 <tr class="separator:a94c94ea9c5d43ef2cd3e33fef610f90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab52d94f60fe02fb121b166478498fafe"><td class="memItemLeft" align="right" valign="top"><a id="ab52d94f60fe02fb121b166478498fafe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>saveAs</b> (std::string file_path)</td></tr>
+<tr class="memitem:ab52d94f60fe02fb121b166478498fafe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#ab52d94f60fe02fb121b166478498fafe">saveAs</a> (std::string file_path)</td></tr>
 <tr class="separator:ab52d94f60fe02fb121b166478498fafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1de8da69b34c2c2389e8592cf42c222c"><td class="memItemLeft" align="right" valign="top"><a id="a1de8da69b34c2c2389e8592cf42c222c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addCell</b> (unsigned row, unsigned column, std::string value)</td></tr>
+<tr class="memitem:a1de8da69b34c2c2389e8592cf42c222c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a1de8da69b34c2c2389e8592cf42c222c">addCell</a> (unsigned row, unsigned column, std::string value)</td></tr>
 <tr class="separator:a1de8da69b34c2c2389e8592cf42c222c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a375a23323f79bf9e282928ef24a4259b"><td class="memItemLeft" align="right" valign="top"><a id="a375a23323f79bf9e282928ef24a4259b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (std::vector&lt; std::string &gt; lines)</td></tr>
+<tr class="memitem:a375a23323f79bf9e282928ef24a4259b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a375a23323f79bf9e282928ef24a4259b">update</a> (std::vector&lt; std::string &gt; lines)</td></tr>
 <tr class="separator:a375a23323f79bf9e282928ef24a4259b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0cf086a990de6948a4471dafe31d2f"><td class="memItemLeft" align="right" valign="top"><a id="a3d0cf086a990de6948a4471dafe31d2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()</td></tr>
+<tr class="memitem:a3d0cf086a990de6948a4471dafe31d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a3d0cf086a990de6948a4471dafe31d2f">print</a> ()</td></tr>
 <tr class="separator:a3d0cf086a990de6948a4471dafe31d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc84046c3cc0b5fd5352d965620417e3"><td class="memItemLeft" align="right" valign="top"><a id="afc84046c3cc0b5fd5352d965620417e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>destroyRows</b> ()</td></tr>
+<tr class="memitem:afc84046c3cc0b5fd5352d965620417e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#afc84046c3cc0b5fd5352d965620417e3">destroyRows</a> ()</td></tr>
 <tr class="separator:afc84046c3cc0b5fd5352d965620417e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c96a197a5f16265af6209513256b365"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a8c96a197a5f16265af6209513256b365">~TableEditor</a> ()</td></tr>
+<tr class="separator:a8c96a197a5f16265af6209513256b365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:acf4cfbd833d708c2a6476ad52ee18b0c"><td class="memItemLeft" align="right" valign="top"><a id="acf4cfbd833d708c2a6476ad52ee18b0c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>toRaw</b> ()</td></tr>
+<tr class="memitem:acf4cfbd833d708c2a6476ad52ee18b0c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#acf4cfbd833d708c2a6476ad52ee18b0c">toRaw</a> ()</td></tr>
 <tr class="separator:acf4cfbd833d708c2a6476ad52ee18b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a830cedd99a6555ddfa03ebc54ea6b23c"><td class="memItemLeft" align="right" valign="top"><a id="a830cedd99a6555ddfa03ebc54ea6b23c"></a>
-<a class="el" href="class_file_manager.html">FileManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>fileManager</b></td></tr>
+<tr class="memitem:a830cedd99a6555ddfa03ebc54ea6b23c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_file_manager.html">FileManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#a830cedd99a6555ddfa03ebc54ea6b23c">fileManager</a></td></tr>
 <tr class="separator:a830cedd99a6555ddfa03ebc54ea6b23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada6970ef8d985bebe6bfc7aa727adbdb"><td class="memItemLeft" align="right" valign="top"><a id="ada6970ef8d985bebe6bfc7aa727adbdb"></a>
-std::vector&lt; <a class="el" href="class_row.html">Row</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>rows</b></td></tr>
+<tr class="memitem:ada6970ef8d985bebe6bfc7aa727adbdb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_row.html">Row</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_table_editor.html#ada6970ef8d985bebe6bfc7aa727adbdb">rows</a></td></tr>
 <tr class="separator:ada6970ef8d985bebe6bfc7aa727adbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that handles changes to the current table. </p>
+<p>Uses the file manager to receive/write changes from/to files. Consists of a vector of rows and handles the logic for adding more rows. This way it becomes a pseud RowManager. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0b7ef71972cbac9b27474cd289ea4489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b7ef71972cbac9b27474cd289ea4489">&#9670;&nbsp;</a></span>TableEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TableEditor::TableEditor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_file_manager.html">FileManager</a> *&#160;</td>
+          <td class="paramname"><em>fileManager</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initializes the file manager pointer </p>
+
+</div>
+</div>
+<a id="a8c96a197a5f16265af6209513256b365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c96a197a5f16265af6209513256b365">&#9670;&nbsp;</a></span>~TableEditor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TableEditor::~TableEditor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frees all the rows </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1de8da69b34c2c2389e8592cf42c222c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de8da69b34c2c2389e8592cf42c222c">&#9670;&nbsp;</a></span>addCell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TableEditor::addCell </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handles the logic for adding a cell to a row. If the row does not exist, more are created until the given row is reached </p>
+
+</div>
+</div>
+<a id="afc84046c3cc0b5fd5352d965620417e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc84046c3cc0b5fd5352d965620417e3">&#9670;&nbsp;</a></span>destroyRows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TableEditor::destroyRows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Frees all the rows </p>
+
+</div>
+</div>
+<a id="a3d0cf086a990de6948a4471dafe31d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0cf086a990de6948a4471dafe31d2f">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TableEditor::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prints all the row values by using a new line between the rows </p>
+
+</div>
+</div>
+<a id="a94c94ea9c5d43ef2cd3e33fef610f90d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94c94ea9c5d43ef2cd3e33fef610f90d">&#9670;&nbsp;</a></span>save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TableEditor::save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves all the values in the rows by using the file manager in the current file </p>
+
+</div>
+</div>
+<a id="ab52d94f60fe02fb121b166478498fafe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52d94f60fe02fb121b166478498fafe">&#9670;&nbsp;</a></span>saveAs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TableEditor::saveAs </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves all the values in the rows by using the file manager to the given file </p>
+
+</div>
+</div>
+<a id="acf4cfbd833d708c2a6476ad52ee18b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4cfbd833d708c2a6476ad52ee18b0c">&#9670;&nbsp;</a></span>toRaw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string TableEditor::toRaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the raw values of all the cells in all the rows </p>
+
+</div>
+</div>
+<a id="a375a23323f79bf9e282928ef24a4259b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375a23323f79bf9e282928ef24a4259b">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TableEditor::update </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>lines</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Populates the rows by parsing the lines </p>
+
+<p>Implements <a class="el" href="class_i_observer.html#a3cb03fdce302c975435260441bceb5c1">IObserver</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a830cedd99a6555ddfa03ebc54ea6b23c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830cedd99a6555ddfa03ebc54ea6b23c">&#9670;&nbsp;</a></span>fileManager</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_file_manager.html">FileManager</a>* TableEditor::fileManager</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pointer to the file manager </p>
+
+</div>
+</div>
+<a id="ada6970ef8d985bebe6bfc7aa727adbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada6970ef8d985bebe6bfc7aa727adbdb">&#9670;&nbsp;</a></span>rows</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="class_row.html">Row</a>*&gt; TableEditor::rows</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The vector of rows </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/table/<a class="el" href="table__editor_8hh_source.html">table_editor.hh</a></li>
 </ul>

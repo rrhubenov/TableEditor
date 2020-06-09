@@ -75,19 +75,20 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../table/observer.hh&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_i_subject.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_subject.html">ISubject</a> {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        std::vector&lt;IObserver*&gt; observers;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> attach(<a class="code" href="class_i_observer.html">IObserver</a>* observer) = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> notify() = 0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_i_subject.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_subject.html">ISubject</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_i_subject.html#a66f4ce666ed8b85d694a9b73d6bc16fb">   14</a></span>&#160;        std::vector&lt;IObserver*&gt; <a class="code" href="class_i_subject.html#a66f4ce666ed8b85d694a9b73d6bc16fb">observers</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_i_subject.html#add1b9cce16468869c29b29c2e81e62fb">   17</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_subject.html#add1b9cce16468869c29b29c2e81e62fb">attach</a>(<a class="code" href="class_i_observer.html">IObserver</a>* observer) = 0; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_i_subject.html#a494055b38b94a83401c52832ca9c9273">   19</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_subject.html#a494055b38b94a83401c52832ca9c9273">notify</a>() = 0; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_i_subject_html"><div class="ttname"><a href="class_i_subject.html">ISubject</a></div><div class="ttdef"><b>Definition:</b> subject.hh:7</div></div>
-<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdef"><b>Definition:</b> observer.hh:6</div></div>
+<div class="ttc" id="aclass_i_subject_html_a66f4ce666ed8b85d694a9b73d6bc16fb"><div class="ttname"><a href="class_i_subject.html#a66f4ce666ed8b85d694a9b73d6bc16fb">ISubject::observers</a></div><div class="ttdeci">std::vector&lt; IObserver * &gt; observers</div><div class="ttdef"><b>Definition:</b> subject.hh:14</div></div>
+<div class="ttc" id="aclass_i_subject_html"><div class="ttname"><a href="class_i_subject.html">ISubject</a></div><div class="ttdoc">Interface for designating a class as a subject.</div><div class="ttdef"><b>Definition:</b> subject.hh:12</div></div>
+<div class="ttc" id="aclass_i_subject_html_a494055b38b94a83401c52832ca9c9273"><div class="ttname"><a href="class_i_subject.html#a494055b38b94a83401c52832ca9c9273">ISubject::notify</a></div><div class="ttdeci">virtual void notify()=0</div></div>
+<div class="ttc" id="aclass_i_observer_html"><div class="ttname"><a href="class_i_observer.html">IObserver</a></div><div class="ttdoc">Interface that describes an observer class.</div><div class="ttdef"><b>Definition:</b> observer.hh:13</div></div>
+<div class="ttc" id="aclass_i_subject_html_add1b9cce16468869c29b29c2e81e62fb"><div class="ttname"><a href="class_i_subject.html#add1b9cce16468869c29b29c2e81e62fb">ISubject::attach</a></div><div class="ttdeci">virtual void attach(IObserver *observer)=0</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

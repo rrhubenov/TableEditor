@@ -69,60 +69,383 @@ $(function() {
 <div class="title">Cell Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_cell.html" title="Cell interface that describes what all cell classes must implement.">Cell</a> interface that describes what all cell classes must implement.  
+ <a href="class_cell.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="cell_8hh_source.html">cell.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Cell:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_cell.png" usemap="#Cell_map" alt=""/>
   <map id="Cell_map" name="Cell_map">
-<area href="class_double_cell.html" alt="DoubleCell" shape="rect" coords="0,56,80,80"/>
-<area href="class_formula_cell.html" alt="FormulaCell" shape="rect" coords="90,56,170,80"/>
-<area href="class_string_cell.html" alt="StringCell" shape="rect" coords="180,56,260,80"/>
+<area href="class_double_cell.html" title="Class that represents a cell with an integer/double value." alt="DoubleCell" shape="rect" coords="0,56,80,80"/>
+<area href="class_formula_cell.html" title="Class that represents a formula in a cell." alt="FormulaCell" shape="rect" coords="90,56,170,80"/>
+<area href="class_string_cell.html" title="Class that represents a cell with a string value." alt="StringCell" shape="rect" coords="180,56,260,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aac130f7483109e6ae6123b225ea2f307"><td class="memItemLeft" align="right" valign="top"><a id="aac130f7483109e6ae6123b225ea2f307"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Cell</b> (int row, int column, std::string value)</td></tr>
+<tr class="memitem:aac130f7483109e6ae6123b225ea2f307"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#aac130f7483109e6ae6123b225ea2f307">Cell</a> (int <a class="el" href="class_cell.html#a85d2a7af6195f5196574790fbc1becfd">row</a>, int <a class="el" href="class_cell.html#a6aae9428106f7cd7574660e3c2278ee0">column</a>, std::string <a class="el" href="class_cell.html#a12b5d2911db693157ac9bc2c5006266e">value</a>)</td></tr>
 <tr class="separator:aac130f7483109e6ae6123b225ea2f307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc359b4d6d61cac2cabab35aaae801a"><td class="memItemLeft" align="right" valign="top"><a id="a4cc359b4d6d61cac2cabab35aaae801a"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> ()=0</td></tr>
+<tr class="memitem:a3b989453308e0b3b78fbd5f587c600b3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a3b989453308e0b3b78fbd5f587c600b3">~Cell</a> ()=0</td></tr>
+<tr class="separator:a3b989453308e0b3b78fbd5f587c600b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc359b4d6d61cac2cabab35aaae801a"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a4cc359b4d6d61cac2cabab35aaae801a">parse</a> ()=0</td></tr>
 <tr class="separator:a4cc359b4d6d61cac2cabab35aaae801a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bcc6a3d405a0356b1251fcd5bf02513"><td class="memItemLeft" align="right" valign="top"><a id="a1bcc6a3d405a0356b1251fcd5bf02513"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()=0</td></tr>
+<tr class="memitem:a1bcc6a3d405a0356b1251fcd5bf02513"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a1bcc6a3d405a0356b1251fcd5bf02513">print</a> ()=0</td></tr>
 <tr class="separator:a1bcc6a3d405a0356b1251fcd5bf02513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac539fe0f0330ca0e437180e1a5b59162"><td class="memItemLeft" align="right" valign="top"><a id="ac539fe0f0330ca0e437180e1a5b59162"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getRow</b> () const</td></tr>
+<tr class="memitem:ac539fe0f0330ca0e437180e1a5b59162"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ac539fe0f0330ca0e437180e1a5b59162">getRow</a> () const</td></tr>
 <tr class="separator:ac539fe0f0330ca0e437180e1a5b59162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29cebb98b90319bc79b8ae2a311b065d"><td class="memItemLeft" align="right" valign="top"><a id="a29cebb98b90319bc79b8ae2a311b065d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getColumn</b> () const</td></tr>
+<tr class="memitem:a29cebb98b90319bc79b8ae2a311b065d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a29cebb98b90319bc79b8ae2a311b065d">getColumn</a> () const</td></tr>
 <tr class="separator:a29cebb98b90319bc79b8ae2a311b065d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b8e73488fb361c5233bed46262a25a"><td class="memItemLeft" align="right" valign="top"><a id="aa4b8e73488fb361c5233bed46262a25a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getRawValue</b> () const</td></tr>
+<tr class="memitem:aa4b8e73488fb361c5233bed46262a25a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#aa4b8e73488fb361c5233bed46262a25a">getRawValue</a> () const</td></tr>
 <tr class="separator:aa4b8e73488fb361c5233bed46262a25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c701664c929d16cdf217b59bbe89638"><td class="memItemLeft" align="right" valign="top"><a id="a2c701664c929d16cdf217b59bbe89638"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (<a class="el" href="class_cell.html">Cell</a> *)</td></tr>
+<tr class="memitem:a2c701664c929d16cdf217b59bbe89638"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a2c701664c929d16cdf217b59bbe89638">operator+</a> (<a class="el" href="class_cell.html">Cell</a> *)</td></tr>
 <tr class="separator:a2c701664c929d16cdf217b59bbe89638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad94229a5449e5576d980d7708c311ac1"><td class="memItemLeft" align="right" valign="top"><a id="ad94229a5449e5576d980d7708c311ac1"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="class_cell.html">Cell</a> *)</td></tr>
+<tr class="memitem:ad94229a5449e5576d980d7708c311ac1"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#ad94229a5449e5576d980d7708c311ac1">operator*</a> (<a class="el" href="class_cell.html">Cell</a> *)</td></tr>
 <tr class="separator:ad94229a5449e5576d980d7708c311ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b4d2d9630ff61ab2a5395764e1da7d"><td class="memItemLeft" align="right" valign="top"><a id="a21b4d2d9630ff61ab2a5395764e1da7d"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (<a class="el" href="class_cell.html">Cell</a> *)</td></tr>
+<tr class="memitem:a21b4d2d9630ff61ab2a5395764e1da7d"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a21b4d2d9630ff61ab2a5395764e1da7d">operator/</a> (<a class="el" href="class_cell.html">Cell</a> *)</td></tr>
 <tr class="separator:a21b4d2d9630ff61ab2a5395764e1da7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a85d2a7af6195f5196574790fbc1becfd"><td class="memItemLeft" align="right" valign="top"><a id="a85d2a7af6195f5196574790fbc1becfd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>row</b></td></tr>
+<tr class="memitem:a85d2a7af6195f5196574790fbc1becfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a85d2a7af6195f5196574790fbc1becfd">row</a></td></tr>
 <tr class="separator:a85d2a7af6195f5196574790fbc1becfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6aae9428106f7cd7574660e3c2278ee0"><td class="memItemLeft" align="right" valign="top"><a id="a6aae9428106f7cd7574660e3c2278ee0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>column</b></td></tr>
+<tr class="memitem:a6aae9428106f7cd7574660e3c2278ee0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a6aae9428106f7cd7574660e3c2278ee0">column</a></td></tr>
 <tr class="separator:a6aae9428106f7cd7574660e3c2278ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12b5d2911db693157ac9bc2c5006266e"><td class="memItemLeft" align="right" valign="top"><a id="a12b5d2911db693157ac9bc2c5006266e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="memitem:a12b5d2911db693157ac9bc2c5006266e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cell.html#a12b5d2911db693157ac9bc2c5006266e">value</a></td></tr>
 <tr class="separator:a12b5d2911db693157ac9bc2c5006266e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_cell.html" title="Cell interface that describes what all cell classes must implement.">Cell</a> interface that describes what all cell classes must implement. </p>
+<p>A cell is an element that holds a value and knows how that value should be printer, calculated with, and parsed.</p>
+<p>Using this interface all cell classes can execute operations on eachother. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aac130f7483109e6ae6123b225ea2f307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac130f7483109e6ae6123b225ea2f307">&#9670;&nbsp;</a></span>Cell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Cell::Cell </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Just populates the fields </p>
+
+</div>
+</div>
+<a id="a3b989453308e0b3b78fbd5f587c600b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b989453308e0b3b78fbd5f587c600b3">&#9670;&nbsp;</a></span>~Cell()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Cell::~Cell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Purely virtual destructor that is used by all children </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a29cebb98b90319bc79b8ae2a311b065d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29cebb98b90319bc79b8ae2a311b065d">&#9670;&nbsp;</a></span>getColumn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cell::getColumn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter for the column </p>
+
+</div>
+</div>
+<a id="aa4b8e73488fb361c5233bed46262a25a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b8e73488fb361c5233bed46262a25a">&#9670;&nbsp;</a></span>getRawValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Cell::getRawValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the raw value of the cell. Should not be used to front-end </p>
+
+</div>
+</div>
+<a id="ac539fe0f0330ca0e437180e1a5b59162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac539fe0f0330ca0e437180e1a5b59162">&#9670;&nbsp;</a></span>getRow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cell::getRow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Getter for the row </p>
+
+</div>
+</div>
+<a id="ad94229a5449e5576d980d7708c311ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad94229a5449e5576d980d7708c311ac1">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Cell::operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cell.html">Cell</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Multiply by parsing both cell </p>
+
+</div>
+</div>
+<a id="a2c701664c929d16cdf217b59bbe89638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c701664c929d16cdf217b59bbe89638">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Cell::operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cell.html">Cell</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sum by parsing both cells </p>
+
+</div>
+</div>
+<a id="a21b4d2d9630ff61ab2a5395764e1da7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b4d2d9630ff61ab2a5395764e1da7d">&#9670;&nbsp;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Cell::operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cell.html">Cell</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Divide by parsing both cells </p>
+
+</div>
+</div>
+<a id="a4cc359b4d6d61cac2cabab35aaae801a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc359b4d6d61cac2cabab35aaae801a">&#9670;&nbsp;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double Cell::parse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parses the string value into a calculatable double value </p>
+
+<p>Implemented in <a class="el" href="class_double_cell.html#ae87254c96e30298b87bf2f863c03e05e">DoubleCell</a>, <a class="el" href="class_string_cell.html#af7f46865f7fcdd6b0ce182cae91525b9">StringCell</a>, and <a class="el" href="class_formula_cell.html#aa9b103e4bb1cc1b38ea34534423beba7">FormulaCell</a>.</p>
+
+</div>
+</div>
+<a id="a1bcc6a3d405a0356b1251fcd5bf02513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcc6a3d405a0356b1251fcd5bf02513">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Cell::print </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prints the value the way it should appear to the client </p>
+
+<p>Implemented in <a class="el" href="class_double_cell.html#ac3cb8b45aa719e06ea2fdc7df58f9c8f">DoubleCell</a>, <a class="el" href="class_string_cell.html#a7ec31883364d86ed46b534ba10bfead4">StringCell</a>, and <a class="el" href="class_formula_cell.html#a85cad58256840c372e650044349cc26e">FormulaCell</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6aae9428106f7cd7574660e3c2278ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aae9428106f7cd7574660e3c2278ee0">&#9670;&nbsp;</a></span>column</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cell::column</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Column of the cell. </p>
+
+</div>
+</div>
+<a id="a85d2a7af6195f5196574790fbc1becfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85d2a7af6195f5196574790fbc1becfd">&#9670;&nbsp;</a></span>row</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Cell::row</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p><a class="el" href="class_row.html" title="Class that represents a row in a table.">Row</a> of the cell. </p>
+
+</div>
+</div>
+<a id="a12b5d2911db693157ac9bc2c5006266e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b5d2911db693157ac9bc2c5006266e">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Cell::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Value of the cell in a string form. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/table/<a class="el" href="cell_8hh_source.html">cell.hh</a></li>
 </ul>
